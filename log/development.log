@@ -1,0 +1,740 @@
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `db/development`.`mysql2` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE `db/development`.`mysql2` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (30.5ms)[0m  [1m[35mCREATE DATABASE `jwt_auth_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('8100175434737806350', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateUsers (20230129092804)
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `user_name` varchar(255), `email` varchar(255), `Password_digest` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20230129092804')[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2023-01-29 09:28:13.951750', '2023-01-29 09:28:13.951750')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8100175434737806350')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('8100175434737806350', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('8100175434737806350')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started POST "/users" for ::1 at 2023-01-29 16:10:49 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+TypeError (superclass must be an instance of Class (given an instance of Module)):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users" for ::1 at 2023-01-29 16:13:50 +0530
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"anil1", "name"=>"anil1", "email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"anil1", "email"=>"anil1@gmail.com"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 1.4ms | Allocations: 593)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.4.2) lib/action_controller/metal/request_forgery_protection.rb:251:in `handle_unverified_request'
+actionpack (7.0.4.2) lib/action_controller/metal/request_forgery_protection.rb:284:in `handle_unverified_request'
+actionpack (7.0.4.2) lib/action_controller/metal/request_forgery_protection.rb:273:in `verify_authenticity_token'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.4.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.6.2) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2023-01-29 16:18:37 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"anil1", "name"=>"anil1", "email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"anil1", "email"=>"anil1@gmail.com"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 1.6ms | Allocations: 662)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.4.2) lib/action_controller/metal/request_forgery_protection.rb:251:in `handle_unverified_request'
+actionpack (7.0.4.2) lib/action_controller/metal/request_forgery_protection.rb:284:in `handle_unverified_request'
+actionpack (7.0.4.2) lib/action_controller/metal/request_forgery_protection.rb:273:in `verify_authenticity_token'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.4.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.4.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.6.2) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2023-01-29 16:22:44 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"anil1", "name"=>"anil1", "email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"anil1", "email"=>"anil1@gmail.com"}}
+Can't verify CSRF token authenticity.
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f83b0029398>, params: {"username"=>"anil1", "name"=>"anil1", "email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"name"=>"anil1", "email"=>"anil1@gmail.com"}} }[0m
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 2.1ms | Allocations: 6942)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'username' for User.):
+  
+app/controllers/users_controller.rb:18:in `create'
+Started POST "/users" for ::1 at 2023-01-29 16:23:37 +0530
+Processing by UsersController#create as */*
+  Parameters: {"user_name"=>"anil1", "name"=>"anil1", "email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"anil1", "user_name"=>"anil1", "email"=>"anil1@gmail.com"}}
+Can't verify CSRF token authenticity.
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f83931d7130>, params: {"user_name"=>"anil1", "name"=>"anil1", "email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"name"=>"anil1", "user_name"=>"anil1", "email"=>"anil1@gmail.com"}} }[0m
+Completed 500 Internal Server Error in 210ms (ActiveRecord: 2.3ms | Allocations: 2536)
+
+
+  
+NoMethodError (undefined method `password_digest=' for #<User id: nil, name: "anil1", user_name: "anil1", email: "anil1@gmail.com", Password_digest: nil, created_at: nil, updated_at: nil>):
+  
+app/controllers/users_controller.rb:18:in `create'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('8100175434737806350', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to ChangeFieldNameUser (20230129105813)
+  [1m[35m (7.8ms)[0m  [1m[35mALTER TABLE `users` RENAME COLUMN `Password_digest` TO `password_digest`[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20230129105813')[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('8100175434737806350')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started POST "/users" for ::1 at 2023-01-29 16:30:50 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"user_name"=>"anil1", "name"=>"anil1", "email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"anil1", "user_name"=>"anil1", "email"=>"anil1@gmail.com"}}
+Can't verify CSRF token authenticity.
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f147c1dd520>, params: {"user_name"=>"anil1", "name"=>"anil1", "email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"name"=>"anil1", "user_name"=>"anil1", "email"=>"anil1@gmail.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f147c1dd520>, params: {"user_name"=>"anil1", "name"=>"anil1", "email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"name"=>"anil1", "user_name"=>"anil1", "email"=>"anil1@gmail.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x00007f147c1dd520>, params: {"user_name"=>"anil1", "name"=>"anil1", "email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "controller"=>"users", "action"=>"create", "user"=>{"name"=>"anil1", "user_name"=>"anil1", "email"=>"anil1@gmail.com"}} }[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`user_name` = 'anil1' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `user_name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES ('anil1', 'anil1', 'anil1@gmail.com', '$2a$12$qcklG8pvu2EBfq.fZVVwC.e3SBaPmHSix1/jDYZ1ZOSiDZTDNUrja', '2023-01-29 16:30:50.904184', '2023-01-29 16:30:50.904184')[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+Completed 201 Created in 225ms (Views: 0.5ms | ActiveRecord: 5.8ms | Allocations: 12100)
+
+
+Started POST "/users" for ::1 at 2023-01-29 16:32:58 +0530
+Processing by UsersController#create as */*
+  Parameters: {"user_fields"=>{"user_name"=>"anil1", "name"=>"anil1", "email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "user"=>{}}
+Can't verify CSRF token authenticity.
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`user_name` = 'anil1' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+Completed 422 Unprocessable Entity in 216ms (Views: 0.2ms | ActiveRecord: 4.2ms | Allocations: 7435)
+
+
+Started POST "/users" for ::1 at 2023-01-29 16:33:37 +0530
+Processing by UsersController#create as */*
+  Parameters: {"user_fields"=>{"user_name"=>"anil2", "name"=>"anil2", "email"=>"anil2@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "user"=>{}}
+Can't verify CSRF token authenticity.
+Completed 400 Bad Request in 208ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 378)
+
+
+Started POST "/users" for ::1 at 2023-01-29 16:33:54 +0530
+Processing by UsersController#create as */*
+  Parameters: {"user_fields"=>{"user_name"=>"anil2", "name"=>"anil2", "email"=>"anil2@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "user"=>{}}
+Can't verify CSRF token authenticity.
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`user_name` = 'anil2' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `user_name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES ('anil2', 'anil2', 'anil2@gmail.com', '$2a$12$V7St7iOS/pOlERKv9Gyrru.pOOSKjnEH6fxnsGMh/Uv6oV3YcjKMG', '2023-01-29 16:33:54.324589', '2023-01-29 16:33:54.324589')[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+Completed 201 Created in 215ms (Views: 0.3ms | ActiveRecord: 2.8ms | Allocations: 3418)
+
+
+Started GET "/users" for ::1 at 2023-01-29 16:35:18 +0530
+Processing by UsersController#index as */*
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 635)
+
+
+Started GET "/users" for ::1 at 2023-01-29 16:37:24 +0530
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 864)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007f147d5c5678>):
+  
+app/controllers/application_controller.rb:16:in `rescue in authorize_request'
+app/controllers/application_controller.rb:10:in `authorize_request'
+Started GET "/users" for ::1 at 2023-01-29 16:38:24 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#index as */*
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 126430ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 34511)
+
+
+Started POST "//auth/login" for ::1 at 2023-01-29 16:42:11 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 5ms (Views: 0.2ms | ActiveRecord: 1.2ms | Allocations: 3865)
+
+
+Started POST "//auth/login" for ::1 at 2023-01-29 16:44:36 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 2236)
+
+
+Started POST "//auth/login" for ::1 at 2023-01-29 16:44:52 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:7:in `login'
+Completed 401 Unauthorized in 4ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 2228)
+
+
+Started POST "//auth/login" for ::1 at 2023-01-29 16:44:54 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:7:in `login'
+Completed 401 Unauthorized in 4ms (Views: 0.3ms | ActiveRecord: 1.5ms | Allocations: 659)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil@gmail.com' LIMIT 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 8 LIMIT 1[0m
+Started POST "//auth/login" for ::1 at 2023-01-29 16:48:17 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 401 Unauthorized in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 2230)
+
+
+Started POST "//auth/login" for ::1 at 2023-01-29 16:48:29 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil1@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil1@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 212ms (ActiveRecord: 1.4ms | Allocations: 5995)
+
+
+  
+NoMethodError (undefined method `username' for #<User id: 1, name: "anil1", user_name: "anil1", email: "anil1@gmail.com", password_digest: [FILTERED], created_at: "2023-01-29 16:30:50.904184000 +0530", updated_at: "2023-01-29 16:30:50.904184000 +0530">):
+  
+app/controllers/authentication_controller.rb:10:in `login'
+Started POST "//auth/login" for ::1 at 2023-01-29 16:49:07 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil1@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil1@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 211ms (Views: 0.2ms | ActiveRecord: 2.3ms | Allocations: 3995)
+
+
+Started POST "//auth/login" for ::1 at 2023-01-29 16:50:16 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil1@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil1@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 214ms (Views: 0.2ms | ActiveRecord: 2.1ms | Allocations: 3954)
+
+
+Started POST "//auth/login" for ::1 at 2023-01-29 16:50:41 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil1@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil1@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 206ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 785)
+
+
+Started POST "//auth/login" for ::1 at 2023-01-29 16:50:55 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil1@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil1@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 500 Internal Server Error in 219ms (ActiveRecord: 2.2ms | Allocations: 9406)
+
+
+  
+NameError (uninitialized constant AuthenticationController::JsonWebToken):
+  
+app/controllers/authentication_controller.rb:8:in `login'
+Started POST "//auth/login" for ::1 at 2023-01-29 16:51:23 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil1@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil1@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 218ms (Views: 0.2ms | ActiveRecord: 2.8ms | Allocations: 9750)
+
+
+Started GET "/users/1" for ::1 at 2023-01-29 16:54:21 +0530
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 632)
+
+
+Started GET "/users/1" for ::1 at 2023-01-29 16:55:35 +0530
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authorize_request'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:47:in `find_user'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 4987)
+
+
+Started GET "/users/3" for ::1 at 2023-01-29 16:55:42 +0530
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authorize_request'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:47:in `find_user'
+Filter chain halted as :find_user rendered or redirected
+Completed 404 Not Found in 4ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 1578)
+
+
+Started GET "/users/2" for ::1 at 2023-01-29 16:55:48 +0530
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authorize_request'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:47:in `find_user'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 1340)
+
+
+Started GET "/users/1" for ::1 at 2023-01-29 16:55:52 +0530
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authorize_request'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:47:in `find_user'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1254)
+
+
+Started GET "/users/anil" for ::1 at 2023-01-29 16:56:30 +0530
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"anil"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authorize_request'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 2.2ms | Allocations: 4567)
+
+
+  
+NoMethodError (undefined method `find_by_username!' for User:Class):
+  
+app/controllers/users_controller.rb:46:in `find_user'
+Started GET "/users/anil" for ::1 at 2023-01-29 16:57:06 +0530
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"anil"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authorize_request'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:47:in `find_user'
+Filter chain halted as :find_user rendered or redirected
+Completed 404 Not Found in 10ms (Views: 0.3ms | ActiveRecord: 3.2ms | Allocations: 5038)
+
+
+Started GET "/users/1" for ::1 at 2023-01-29 16:57:11 +0530
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authorize_request'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:47:in `find_user'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 1271)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil@gmail.com' LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil@gmail.com' LIMIT 1[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil1@gmail.com' LIMIT 1[0m
+Started POST "//auth/login" for ::1 at 2023-01-29 16:59:20 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:7:in `login'
+Completed 500 Internal Server Error in 6ms (Views: 0.1ms | ActiveRecord: 2.2ms | Allocations: 3107)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/authentication_controller.rb:16:in `login'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil@gmail.com' LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil@gmail.com' LIMIT 1[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil@gmail.com' LIMIT 1[0m
+Started POST "//auth/login" for ::1 at 2023-01-29 17:05:25 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:7:in `login'
+Completed 400 Bad Request in 6ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 2445)
+
+
+Started POST "//auth/login" for ::1 at 2023-01-29 17:08:43 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:7:in `login'
+Completed 400 Bad Request in 6ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 2687)
+
+
+Started POST "//auth/login" for ::1 at 2023-01-29 17:08:49 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil1@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil1@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:7:in `login'
+Completed 401 Unauthorized in 212ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 2169)
+
+
+Started POST "//auth/login" for ::1 at 2023-01-29 17:09:15 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil1@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil1@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:7:in `login'
+Completed 200 OK in 228ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 5906)
+
+
+Started GET "/users" for ::1 at 2023-01-29 17:09:54 +0530
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authorize_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.6ms | Allocations: 2315)
+
+
+Started GET "/users" for ::1 at 2023-01-29 17:10:07 +0530
+Processing by UsersController#index as */*
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 511)
+
+
+Started GET "/users" for ::1 at 2023-01-29 17:10:24 +0530
+Processing by UsersController#index as */*
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 787)
+
+
+Started GET "/users" for ::1 at 2023-01-29 17:10:51 +0530
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authorize_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.5ms | Allocations: 1617)
+
+
+Started GET "/users" for ::1 at 2023-01-29 17:11:02 +0530
+Processing by UsersController#index as */*
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 503)
+
+
+Started GET "/users" for ::1 at 2023-01-29 17:11:21 +0530
+Processing by UsersController#index as */*
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 503)
+
+
+Started GET "/users" for ::1 at 2023-01-29 17:11:26 +0530
+Processing by UsersController#index as */*
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 503)
+
+
+Started GET "/users" for ::1 at 2023-01-29 17:11:33 +0530
+Processing by UsersController#index as */*
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 784)
+
+
+Started GET "/users" for ::1 at 2023-01-29 17:11:43 +0530
+Processing by UsersController#index as */*
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 503)
+
+
+Started GET "/users" for ::1 at 2023-01-29 17:11:49 +0530
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authorize_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.5ms | Allocations: 1617)
+
+
+Started POST "//auth/login" for ::1 at 2023-01-29 17:15:24 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil1@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil1@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:7:in `login'
+Completed 200 OK in 213ms (Views: 0.2ms | ActiveRecord: 2.2ms | Allocations: 4019)
+
+
+Started POST "//auth/login" for ::1 at 2023-01-29 17:16:02 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil1@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil1@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:7:in `login'
+Completed 200 OK in 212ms (Views: 0.2ms | ActiveRecord: 2.1ms | Allocations: 3946)
+
+
+Started POST "//auth/login" for ::1 at 2023-01-29 17:16:20 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil1@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil1@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:7:in `login'
+Completed 200 OK in 215ms (Views: 0.2ms | ActiveRecord: 2.1ms | Allocations: 3961)
+
+
+Started GET "/users" for ::1 at 2023-01-29 17:16:34 +0530
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:12:in `authorize_request'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.6ms | Allocations: 2303)
+
+
+Started GET "/users" for ::1 at 2023-01-29 17:17:42 +0530
+Processing by UsersController#index as */*
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 545)
+
+
+Started GET "/users" for ::1 at 2023-01-29 17:25:04 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#index as */*
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 9ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3675)
+
+
+Started POST "//auth/login" for ::1 at 2023-01-29 17:25:09 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil1@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil1@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:7:in `login'
+Completed 200 OK in 258ms (Views: 0.2ms | ActiveRecord: 3.3ms | Allocations: 20187)
+
+
+Started POST "/authenticate" for ::1 at 2023-01-29 17:29:54 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/authenticate"):
+  
+Started POST "//auth/login" for ::1 at 2023-01-29 17:42:38 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil1@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil1@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:7:in `login'
+Completed 200 OK in 225ms (Views: 0.2ms | ActiveRecord: 3.0ms | Allocations: 22302)
+
+
+Started POST "/employee/list/1" for ::1 at 2023-01-29 17:53:51 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/employee/list/1"):
+  
+Started GET "/" for ::1 at 2023-02-01 22:21:49 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ApplicationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 332)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 3042)
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 8033)
+
+
+Started POST "//auth/login" for ::1 at 2023-02-01 22:22:06 +0530
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"anil1@gmail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"anil1@gmail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'anil1@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/authentication_controller.rb:7:in `login'
+Completed 200 OK in 226ms (Views: 0.2ms | ActiveRecord: 3.4ms | Allocations: 19878)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-01 23:22:25 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ApplicationController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 288)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3479)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 6390)
+
+
