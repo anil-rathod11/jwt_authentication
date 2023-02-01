@@ -5,7 +5,7 @@ lock "~> 3.17.1"
 server '18.117.152.92', user: 'ubuntu', roles: %w{web app db}
 
 set :repo_url, 'git@github.com:anil-rathod11/employee_portal.git'
-set :application,     'jwt_authentication'
+set :application,     'jwt_authenticati`on'
 
 set :rbenv_ruby,      '3.2.0'
 # set :rbenv_ruby_dir,  '/home/ubuntu/.rbenv/versions/3.0.2'
@@ -63,7 +63,7 @@ namespace :deploy do
     on roles(:app) do
 
       # Update this to your branch name: master, main, etc. Here it's main
-      unless `git rev-parse HEAD` == `git rev-parse origin/master`
+      unless `git rev-parse HEAD` == `git rev-parse origin/main`
         puts "WARNING: HEAD is not the same as origin/master"
         puts "Run `git push` to sync changes."
         exit
