@@ -36,7 +36,7 @@ append :rbenv_map_bins, 'puma', 'pumactl'
 
 ## Defaults:
 # set :scm,           :git
-# set :branch,        :main
+set :branch,        :main
 # set :format,        :pretty
 # set :log_level,     :debug
 # set :keep_releases, 5
@@ -64,7 +64,7 @@ namespace :deploy do
 
       # Update this to your branch name: master, main, etc. Here it's main
       unless `git rev-parse HEAD` == `git rev-parse origin/main`
-        puts "WARNING: HEAD is not the same as origin/master"
+        puts "WARNING: HEAD is not the same as origin/main"
         puts "Run `git push` to sync changes."
         exit
       end
