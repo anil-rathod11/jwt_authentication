@@ -1,0 +1,772 @@
+# Logfile created on 2023-02-02 00:11:05 +0530 by logger.rb/v1.5.3
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-02 00:11:05 +0530 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [422a6912] Running [ -d $HOME/.rbenv/versions/3.2.0 ] as ubuntu@18.117.152.92
+ DEBUG [422a6912] Command: [ -d $HOME/.rbenv/versions/3.2.0 ]
+ DEBUG [422a6912] Finished in 4.762 seconds with exit status 0 (successful).
+  INFO [ae0f6340] Running mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/sockets -p as ubuntu@18.117.152.92
+ DEBUG [ae0f6340] Command: mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/sockets -p
+  INFO [ae0f6340] Finished in 1.223 seconds with exit status 0 (successful).
+  INFO [327c8e10] Running mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/pids -p as ubuntu@18.117.152.92
+ DEBUG [327c8e10] Command: mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/pids -p
+  INFO [327c8e10] Finished in 1.228 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-02 00:15:04 +0530 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [9a5e4b24] Running [ -d $HOME/.rbenv/versions/3.2.0 ] as ubuntu@18.117.152.92
+ DEBUG [9a5e4b24] Command: [ -d $HOME/.rbenv/versions/3.2.0 ]
+ DEBUG [9a5e4b24] Finished in 4.643 seconds with exit status 0 (successful).
+  INFO [7b96a076] Running mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/sockets -p as ubuntu@18.117.152.92
+ DEBUG [7b96a076] Command: mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/sockets -p
+  INFO [7b96a076] Finished in 1.226 seconds with exit status 0 (successful).
+  INFO [be855f3d] Running mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/pids -p as ubuntu@18.117.152.92
+ DEBUG [be855f3d] Command: mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/pids -p
+  INFO [be855f3d] Finished in 1.146 seconds with exit status 0 (successful).
+  INFO [1d4c7489] Running /usr/bin/env mkdir -p /tmp as ubuntu@18.117.152.92
+ DEBUG [1d4c7489] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [1d4c7489] Finished in 1.200 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-10c56321f7e26093dd55.sh 0.0%
+  INFO Uploading /tmp/git-ssh-10c56321f7e26093dd55.sh 100.0%
+  INFO [71acc2f9] Running /usr/bin/env chmod 700 /tmp/git-ssh-10c56321f7e26093dd55.sh as ubuntu@18.117.152.92
+ DEBUG [71acc2f9] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-10c56321f7e26093dd55.sh )
+  INFO [71acc2f9] Finished in 1.126 seconds with exit status 0 (successful).
+  INFO [50038e39] Running /usr/bin/env git ls-remote git@github.com:anil-rathod11/employee_portal.git HEAD as ubuntu@18.117.152.92
+ DEBUG [50038e39] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-10c56321f7e26093dd55.sh" ; /usr/bin/env git ls-remote git@github.com:anil-rathod11/employee_portal.git HEAD )
+ DEBUG [50038e39] 	d2d60838f6ffcc2ea7b69609123bc8288fedd0b9
+ DEBUG [50038e39] 		
+ DEBUG [50038e39] 	HEAD
+ DEBUG [50038e39] 	
+  INFO [50038e39] Finished in 2.665 seconds with exit status 0 (successful).
+  INFO [d5aa4ca9] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared /home/ubuntu/apps/jwt_authentication/releases as ubuntu@18.117.152.92
+ DEBUG [d5aa4ca9] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared /home/ubuntu/apps/jwt_authentication/releases )
+  INFO [d5aa4ca9] Finished in 0.803 seconds with exit status 0 (successful).
+  INFO [a26a5a7a] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/public/assets as ubuntu@18.117.152.92
+ DEBUG [a26a5a7a] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/public/assets )
+  INFO [a26a5a7a] Finished in 1.227 seconds with exit status 0 (successful).
+ DEBUG [15c24f8e] Running [ -f /home/ubuntu/apps/jwt_authentication/shared/puma.rb ] as ubuntu@18.117.152.92
+ DEBUG [15c24f8e] Command: [ -f /home/ubuntu/apps/jwt_authentication/shared/puma.rb ]
+ DEBUG [15c24f8e] Finished in 1.124 seconds with exit status 1 (failed).
+  WARN puma.rb NOT FOUND!
+ DEBUG Uploading /home/ubuntu/apps/jwt_authentication/shared/puma.rb 0.0%
+  INFO Uploading /home/ubuntu/apps/jwt_authentication/shared/puma.rb 100.0%
+  INFO puma.rb generated
+ DEBUG [8e491e78] Running [ -f /home/ubuntu/apps/jwt_authentication/current/REVISION ] as ubuntu@18.117.152.92
+ DEBUG [8e491e78] Command: [ -f /home/ubuntu/apps/jwt_authentication/current/REVISION ]
+ DEBUG [8e491e78] Finished in 1.050 seconds with exit status 1 (failed).
+ DEBUG [6a09af98] Running [ -f /home/ubuntu/apps/jwt_authentication/repo/HEAD ] as ubuntu@18.117.152.92
+ DEBUG [6a09af98] Command: [ -f /home/ubuntu/apps/jwt_authentication/repo/HEAD ]
+ DEBUG [6a09af98] Finished in 1.095 seconds with exit status 1 (failed).
+ DEBUG [ec1d93c9] Running if test ! -d /home/ubuntu/apps/jwt_authentication; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [ec1d93c9] Command: if test ! -d /home/ubuntu/apps/jwt_authentication; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication'" 1>&2; false; fi
+ DEBUG [ec1d93c9] Finished in 1.126 seconds with exit status 0 (successful).
+  INFO [41e66ef8] Running /usr/bin/env git clone --mirror git@github.com:anil-rathod11/employee_portal.git /home/ubuntu/apps/jwt_authentication/repo as ubuntu@18.117.152.92
+ DEBUG [41e66ef8] Command: cd /home/ubuntu/apps/jwt_authentication && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-10c56321f7e26093dd55.sh" ; /usr/bin/env git clone --mirror git@github.com:anil-rathod11/employee_portal.git /home/ubuntu/apps/jwt_authentication/repo )
+ DEBUG [41e66ef8] 	Cloning into bare repository '/home/ubuntu/apps/jwt_authentication/repo'...
+ DEBUG [41e66ef8] 	
+ DEBUG [41e66ef8] 	remote: Enumerating objects: 11903, done.[K
+ DEBUG [41e66ef8] 	
+ DEBUG [41e66ef8] 	remote: Counting objects:   0% (1/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:   1% (120/11903)[Kremote: Counting objects:   2% (239/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:   3% (358/11903)[Kremote: Counting objects:   4% (477/11903)[Kremote: Counting objects:   5% (596/11903)[Kremote: Counting objects:   6% (715/11903)[Kremote: Counting objects:   7% (834/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:   8% (953/11903)[Kremote: Counting objects:   9% (1072/11903)[Kremote: Counting objects:  10% (1191/11903)[Kremote: Counting objects:  11% (1310/11903)[Kremote: Counting objects:  12% (1429/11903)[Kremote: Counting objects:  13% (1548/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:  14% (1667/11903)[Kremote: Counting objects:  15% (1786/11903)[Kremote: Counting objects:  16% (1905/11903)[Kremote: Counting objects:  17% (2024/11903)[Kremote: Counting objects:  18% (2143/11903)[Kremote: Counting objects:  19% (2262/11903)[Kremote: Counting objects:  20% (2381/11903)[Kremote: Counting objects:  21% (2500/11903)[Kremote: Counting objects:  22% (2619/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:  23% (2738/11903)[Kremote: Counting objects:  24% (2857/11903)[Kremote: Counting objects:  25% (2976/11903)[Kremote: Counting objects:  26% (3095/11903)[Kremote: Counting objects:  27% (3214/11903)[Kremote: Counting objects:  28% (3333/11903)[Kremote: Counting objects:  29% (3452/11903)[Kremote: Counting objects:  30% (3571/11903)[Kremote: Counting objects:  31% (3690/11903)[Kremote: Counting objects:  32% (3809/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:  33% (3928/11903)[Kremote: Counting objects:  34% (4048/11903)[Kremote: Counting objects:  35% (4167/11903)[Kremote: Counting objects:  36% (4286/11903)[Kremote: Counting objects:  37% (4405/11903)[Kremote: Counting objects:  38% (4524/11903)[Kremote: Counting objects:  39% (4643/11903)[Kremote: Counting objects:  40% (4762/11903)[Kremote: Counting objects:  41% (4881/11903)[Kremote: Counting objects:  42% (5000/11903)[Kremote: Counting objects:  43% (5119/11903)[Kremote: Counting objects:  44% (5238/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:  45% (5357/11903)[Kremote: Counting objects:  46% (5476/11903)[Kremote: Counting objects:  47% (5595/11903)[Kremote: Counting objects:  48% (5714/11903)[Kremote: Counting objects:  49% (5833/11903)[Kremote: Counting objects:  50% (5952/11903)[Kremote: Counting objects:  51% (6071/11903)[Kremote: Counting objects:  52% (6190/11903)[Kremote: Counting objects:  53% (6309/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:  54% (6428/11903)[Kremote: Counting objects:  55% (6547/11903)[Kremote: Counting objects:  56% (6666/11903)[Kremote: Counting objects:  57% (6785/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:  58% (6904/11903)[Kremote: Counting objects:  59% (7023/11903)[Kremote: Counting objects:  60% (7142/11903)[Kremote: Counting objects:  61% (7261/11903)[Kremote: Counting objects:  62% (7380/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:  63% (7499/11903)[Kremote: Counting objects:  64% (7618/11903)[Kremote: Counting objects:  65% (7737/11903)[Kremote: Counting objects:  66% (7856/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:  67% (7976/11903)[Kremote: Counting objects:  68% (8095/11903)[Kremote: Counting objects:  69% (8214/11903)[Kremote: Counting objects:  70% (8333/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:  71% (8452/11903)[Kremote: Counting objects:  72% (8571/11903)[Kremote: Counting objects:  73% (8690/11903)[Kremote: Counting objects:  74% (8809/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:  75% (8928/11903)[Kremote: Counting objects:  76% (9047/11903)[Kremote: Counting objects:  77% (9166/11903)[Kremote: Counting objects:  78% (9285/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:  79% (9404/11903)[Kremote: Counting objects:  80% (9523/11903)[Kremote: Counting objects:  81% (9642/11903)[Kremote: Counting objects:  82% (9761/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:  83% (9880/11903)[Kremote: Counting objects:  84% (9999/11903)[Kremote: Counting objects:  85% (10118/11903)[Kremote: Counting objects:  86% (10237/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:  87% (10356/11903)[Kremote: Counting objects:  88% (10475/11903)[Kremote: Counting objects:  89% (10594/11903)[Kremote: Counting objects:  90% (10713/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:  91% (10832/11903)[Kremote: Counting objects:  92% (10951/11903)[Kremote: Counting objects:  93% (11070/11903)[Kremote: Counting objects:  94% (11189/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects:  95% (11308/11903)[Kremote: Counting objects:  96% (11427/11903)[Kremote: Counting objects:  97% (11546/11903)[Kremote: Counting objects:  98% (11665/11903)[Kremote: Counting objects:  99% (11784/11903)[Kremote: Counting objects: 100% (11903/11903)[K
+ DEBUG [41e66ef8] 	remote: Counting objects: 100% (11903/11903), done.[K
+remote: Compressing objects:   0% (1/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:   1% (114/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:   2% (228/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:   3% (342/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:   4% (455/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:   5% (569/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:   6% (683/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:   7% (796/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:   8% (910/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:   9% (1024/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  10% (1137/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  11% (1251/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  12% (1365/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  13% (1479/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  14% (1592/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  15% (1706/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  16% (1820/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  17% (1933/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  18% (2047/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  19% (2161/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  20% (2274/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  21% (2388/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  22% (2502/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  23% (2616/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  24% (2729/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  25% (2843/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  26% (2957/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  27% (3070/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  28% (3184/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  29% (3298/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  30% (3411/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  31% (3525/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  31% (3549/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  32% (3639/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  33% (3753/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  34% (3866/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  35% (3980/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  36% (4094/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  37% (4207/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  38% (4321/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  39% (4435/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  40% (4548/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  41% (4662/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  42% (4776/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  43% (4890/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  44% (5003/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  45% (5117/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  46% (5231/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  47% (5344/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  48% (5458/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  49% (5572/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  50% (5685/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  51% (5799/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  52% (5913/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  53% (6027/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  54% (6140/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  55% (6254/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  56% (6368/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  57% (6481/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  58% (6595/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  59% (6709/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  60% (6822/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  61% (6936/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  62% (7050/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  63% (7164/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  64% (7277/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  65% (7391/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  66% (7505/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  67% (7618/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  68% (7732/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  69% (7846/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  70% (7959/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  71% (8073/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  72% (8187/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  73% (8301/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  74% (8414/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  75% (8528/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  76% (8642/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  77% (8755/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  78% (8869/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  79% (8983/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  80% (9096/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  81% (9210/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  82% (9324/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  83% (9438/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  84% (9551/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  85% (9665/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  86% (9779/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  87% (9892/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  88% (10006/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  89% (10120/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  90% (10233/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  91% (10347/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  92% (10461/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  93% (10575/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  94% (10688/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  95% (10802/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  96% (10916/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  97% (11029/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  98% (11143/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects:  99% (11257/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects: 100% (11370/11370)[K
+ DEBUG [41e66ef8] 	remote: Compressing objects: 100% (11370/11370), done.[K
+ DEBUG [41e66ef8] 	Receiving objects:   0% (1/11903)
+ DEBUG [41e66ef8] 	Receiving objects:   1% (120/11903)
+ DEBUG [41e66ef8] 	Receiving objects:   2% (239/11903)
+ DEBUG [41e66ef8] 	Receiving objects:   3% (358/11903)
+ DEBUG [41e66ef8] 	Receiving objects:   4% (477/11903)
+ DEBUG [41e66ef8] 	Receiving objects:   5% (596/11903)
+ DEBUG [41e66ef8] 	Receiving objects:   6% (715/11903)
+ DEBUG [41e66ef8] 	Receiving objects:   7% (834/11903)
+ DEBUG [41e66ef8] 	Receiving objects:   8% (953/11903)
+ DEBUG [41e66ef8] 	Receiving objects:   9% (1072/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  10% (1191/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  11% (1310/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  12% (1429/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  13% (1548/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  14% (1667/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  15% (1786/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  16% (1905/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  17% (2024/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  18% (2143/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  19% (2262/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  20% (2381/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  21% (2500/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  22% (2619/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  23% (2738/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  24% (2857/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  25% (2976/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  26% (3095/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  27% (3214/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  28% (3333/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  29% (3452/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  30% (3571/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  31% (3690/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  32% (3809/11903)
+ DEBUG [41e66ef8] 	Receiving objects:  33% (3928/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  34% (4048/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  35% (4167/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  36% (4286/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  37% (4405/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  38% (4524/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  39% (4643/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  40% (4762/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  41% (4881/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  42% (5000/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  43% (5119/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  44% (5238/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  45% (5357/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  46% (5476/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  47% (5595/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  48% (5714/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  49% (5833/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  50% (5952/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  51% (6071/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  52% (6190/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  53% (6309/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  54% (6428/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  55% (6547/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  56% (6666/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  57% (6785/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  58% (6904/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  59% (7023/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  60% (7142/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  61% (7261/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  62% (7380/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  63% (7499/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  64% (7618/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  65% (7737/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  66% (7856/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  67% (7976/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  68% (8095/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  69% (8214/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  70% (8333/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  70% (8392/11903), 9.83 MiB | 19.64 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  71% (8452/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  72% (8571/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  73% (8690/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  74% (8809/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  75% (8928/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  76% (9047/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  77% (9166/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  78% (9285/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  79% (9404/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  80% (9523/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  81% (9642/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  82% (9761/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  83% (9880/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  84% (9999/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  85% (10118/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  86% (10237/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  87% (10356/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  88% (10475/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  89% (10594/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  90% (10713/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  91% (10832/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  92% (10951/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  93% (11070/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  94% (11189/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  95% (11308/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  96% (11427/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  97% (11546/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	remote: Total 11903 (delta 682), reused 11648 (delta 427), pack-reused 0[K
+ DEBUG [41e66ef8] 	
+ DEBUG [41e66ef8] 	Receiving objects:  98% (11665/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects:  99% (11784/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects: 100% (11903/11903), 21.45 MiB | 21.44 MiB/s
+ DEBUG [41e66ef8] 	Receiving objects: 100% (11903/11903), 30.51 MiB | 21.90 MiB/s, done.
+ DEBUG [41e66ef8] 	
+ DEBUG [41e66ef8] 	Resolving deltas:   0% (0/682)
+ DEBUG [41e66ef8] 	Resolving deltas:   1% (7/682)
+ DEBUG [41e66ef8] 	Resolving deltas:   2% (14/682)
+ DEBUG [41e66ef8] 	Resolving deltas:   3% (21/682)
+ DEBUG [41e66ef8] 	Resolving deltas:   4% (28/682)
+ DEBUG [41e66ef8] 	Resolving deltas:   5% (35/682)
+ DEBUG [41e66ef8] 	Resolving deltas:   6% (41/682)
+ DEBUG [41e66ef8] 	Resolving deltas:   7% (48/682)
+ DEBUG [41e66ef8] 	Resolving deltas:   8% (55/682)
+ DEBUG [41e66ef8] 	Resolving deltas:   9% (62/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  10% (69/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  11% (76/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  12% (82/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  13% (89/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  14% (96/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  15% (103/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  16% (110/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  17% (116/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  18% (123/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  19% (130/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  20% (137/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  21% (144/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  22% (151/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  23% (157/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  24% (164/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  25% (171/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  26% (178/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  27% (185/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  28% (191/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  29% (198/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  30% (205/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  31% (212/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  32% (219/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  33% (226/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  34% (232/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  35% (239/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  36% (246/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  37% (253/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  38% (260/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  39% (266/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  40% (273/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  41% (280/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  42% (287/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  43% (294/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  44% (301/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  45% (307/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  46% (314/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  47% (321/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  48% (328/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  49% (335/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  50% (341/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  51% (348/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  52% (355/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  53% (362/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  54% (369/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  55% (376/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  56% (382/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  57% (389/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  58% (396/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  59% (403/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  60% (410/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  61% (417/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  62% (423/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  63% (430/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  64% (437/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  65% (444/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  66% (451/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  67% (457/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  68% (464/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  69% (471/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  70% (478/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  71% (485/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  72% (492/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  73% (498/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  74% (505/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  75% (512/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  76% (519/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  77% (526/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  78% (532/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  79% (539/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  80% (546/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  81% (553/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  82% (560/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  83% (567/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  84% (573/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  85% (580/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  86% (587/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  87% (594/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  88% (601/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  89% (607/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  90% (614/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  91% (621/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  92% (628/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  93% (635/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  94% (642/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  95% (648/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  96% (655/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  97% (662/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  98% (669/682)
+ DEBUG [41e66ef8] 	Resolving deltas:  99% (676/682)
+ DEBUG [41e66ef8] 	Resolving deltas: 100% (682/682)
+ DEBUG [41e66ef8] 	Resolving deltas: 100% (682/682), done.
+ DEBUG [41e66ef8] 	
+  INFO [41e66ef8] Finished in 6.988 seconds with exit status 0 (successful).
+ DEBUG [be3fb92a] Running if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [be3fb92a] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi
+ DEBUG [be3fb92a] Finished in 0.997 seconds with exit status 0 (successful).
+  INFO [b54d681b] Running /usr/bin/env git remote set-url origin git@github.com:anil-rathod11/employee_portal.git as ubuntu@18.117.152.92
+ DEBUG [b54d681b] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-10c56321f7e26093dd55.sh" ; /usr/bin/env git remote set-url origin git@github.com:anil-rathod11/employee_portal.git )
+  INFO [b54d681b] Finished in 1.023 seconds with exit status 0 (successful).
+  INFO [45ba08c7] Running /usr/bin/env git remote update --prune as ubuntu@18.117.152.92
+ DEBUG [45ba08c7] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-10c56321f7e26093dd55.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [45ba08c7] 	Fetching origin
+ DEBUG [45ba08c7] 	
+  INFO [45ba08c7] Finished in 2.577 seconds with exit status 0 (successful).
+ DEBUG [5c215300] Running if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [5c215300] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi
+ DEBUG [5c215300] Finished in 1.107 seconds with exit status 0 (successful).
+  INFO [597aa802] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230201184526 as ubuntu@18.117.152.92
+ DEBUG [597aa802] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-10c56321f7e26093dd55.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230201184526 )
+  INFO [597aa802] Finished in 1.126 seconds with exit status 0 (successful).
+  INFO [2e941e74] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/jwt_authentication/releases/20230201184526 as ubuntu@18.117.152.92
+ DEBUG [2e941e74] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-10c56321f7e26093dd55.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/jwt_authentication/releases/20230201184526 )
+ DEBUG [2e941e74] 	fatal: not a valid object name: master
+ DEBUG [2e941e74] 	
+ DEBUG [2e941e74] 	tar: 
+ DEBUG [2e941e74] 	This does not look like a tar archive
+ DEBUG [2e941e74] 	
+ DEBUG [2e941e74] 	tar: 
+ DEBUG [2e941e74] 	Exiting with failure status due to previous errors
+ DEBUG [2e941e74] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-02 00:19:58 +0530 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [6867375b] Running [ -d $HOME/.rbenv/versions/3.2.0 ] as ubuntu@18.117.152.92
+ DEBUG [6867375b] Command: [ -d $HOME/.rbenv/versions/3.2.0 ]
+ DEBUG [6867375b] Finished in 4.422 seconds with exit status 0 (successful).
+  INFO [e81af225] Running mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/sockets -p as ubuntu@18.117.152.92
+ DEBUG [e81af225] Command: mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/sockets -p
+  INFO [e81af225] Finished in 1.225 seconds with exit status 0 (successful).
+  INFO [d511500a] Running mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/pids -p as ubuntu@18.117.152.92
+ DEBUG [d511500a] Command: mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/pids -p
+  INFO [d511500a] Finished in 1.125 seconds with exit status 0 (successful).
+  INFO [bc761d04] Running /usr/bin/env mkdir -p /tmp as ubuntu@18.117.152.92
+ DEBUG [bc761d04] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [bc761d04] Finished in 1.223 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-545857ec85a4f7ac9d8b.sh 0.0%
+  INFO Uploading /tmp/git-ssh-545857ec85a4f7ac9d8b.sh 100.0%
+  INFO [c7613cac] Running /usr/bin/env chmod 700 /tmp/git-ssh-545857ec85a4f7ac9d8b.sh as ubuntu@18.117.152.92
+ DEBUG [c7613cac] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-545857ec85a4f7ac9d8b.sh )
+  INFO [c7613cac] Finished in 1.229 seconds with exit status 0 (successful).
+  INFO [7f9aa44c] Running /usr/bin/env git ls-remote git@github.com:anil-rathod11/employee_portal.git HEAD as ubuntu@18.117.152.92
+ DEBUG [7f9aa44c] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-545857ec85a4f7ac9d8b.sh" ; /usr/bin/env git ls-remote git@github.com:anil-rathod11/employee_portal.git HEAD )
+ DEBUG [7f9aa44c] 	d2d60838f6ffcc2ea7b69609123bc8288fedd0b9
+ DEBUG [7f9aa44c] 		HEAD
+ DEBUG [7f9aa44c] 	
+  INFO [7f9aa44c] Finished in 2.663 seconds with exit status 0 (successful).
+  INFO [a56b6477] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared /home/ubuntu/apps/jwt_authentication/releases as ubuntu@18.117.152.92
+ DEBUG [a56b6477] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared /home/ubuntu/apps/jwt_authentication/releases )
+  INFO [a56b6477] Finished in 0.815 seconds with exit status 0 (successful).
+  INFO [637d2d50] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/public/assets as ubuntu@18.117.152.92
+ DEBUG [637d2d50] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/public/assets )
+  INFO [637d2d50] Finished in 1.125 seconds with exit status 0 (successful).
+ DEBUG [21a83b80] Running [ -f /home/ubuntu/apps/jwt_authentication/shared/puma.rb ] as ubuntu@18.117.152.92
+ DEBUG [21a83b80] Command: [ -f /home/ubuntu/apps/jwt_authentication/shared/puma.rb ]
+ DEBUG [21a83b80] Finished in 1.146 seconds with exit status 0 (successful).
+ DEBUG [913b93a1] Running [ -f /home/ubuntu/apps/jwt_authentication/current/REVISION ] as ubuntu@18.117.152.92
+ DEBUG [913b93a1] Command: [ -f /home/ubuntu/apps/jwt_authentication/current/REVISION ]
+ DEBUG [913b93a1] Finished in 1.206 seconds with exit status 1 (failed).
+ DEBUG [53791c6e] Running [ -f /home/ubuntu/apps/jwt_authentication/repo/HEAD ] as ubuntu@18.117.152.92
+ DEBUG [53791c6e] Command: [ -f /home/ubuntu/apps/jwt_authentication/repo/HEAD ]
+ DEBUG [53791c6e] Finished in 1.227 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/jwt_authentication/repo
+ DEBUG [847ef48b] Running if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [847ef48b] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi
+ DEBUG [847ef48b] Finished in 1.023 seconds with exit status 0 (successful).
+  INFO [cb80af14] Running /usr/bin/env git remote set-url origin git@github.com:anil-rathod11/employee_portal.git as ubuntu@18.117.152.92
+ DEBUG [cb80af14] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-545857ec85a4f7ac9d8b.sh" ; /usr/bin/env git remote set-url origin git@github.com:anil-rathod11/employee_portal.git )
+  INFO [cb80af14] Finished in 1.227 seconds with exit status 0 (successful).
+  INFO [b8d7d0d6] Running /usr/bin/env git remote update --prune as ubuntu@18.117.152.92
+ DEBUG [b8d7d0d6] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-545857ec85a4f7ac9d8b.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [b8d7d0d6] 	Fetching origin
+ DEBUG [b8d7d0d6] 	
+  INFO [b8d7d0d6] Finished in 2.764 seconds with exit status 0 (successful).
+ DEBUG [cd2b2bdb] Running if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [cd2b2bdb] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi
+ DEBUG [cd2b2bdb] Finished in 1.228 seconds with exit status 0 (successful).
+  INFO [6dd24790] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230201185017 as ubuntu@18.117.152.92
+ DEBUG [6dd24790] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-545857ec85a4f7ac9d8b.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230201185017 )
+  INFO [6dd24790] Finished in 1.228 seconds with exit status 0 (successful).
+  INFO [50ac778b] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/jwt_authentication/releases/20230201185017 as ubuntu@18.117.152.92
+ DEBUG [50ac778b] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-545857ec85a4f7ac9d8b.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/jwt_authentication/releases/20230201185017 )
+  INFO [50ac778b] Finished in 2.253 seconds with exit status 0 (successful).
+ DEBUG [5fc437f8] Running if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [5fc437f8] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi
+ DEBUG [5fc437f8] Finished in 1.124 seconds with exit status 0 (successful).
+ DEBUG [aac83f21] Running /usr/bin/env git rev-list --max-count=1 main as ubuntu@18.117.152.92
+ DEBUG [aac83f21] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-545857ec85a4f7ac9d8b.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [aac83f21] 	d2d60838f6ffcc2ea7b69609123bc8288fedd0b9
+ DEBUG [aac83f21] 	
+ DEBUG [aac83f21] Finished in 1.229 seconds with exit status 0 (successful).
+ DEBUG [aea8cbf0] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230201185017; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230201185017'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [aea8cbf0] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230201185017; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230201185017'" 1>&2; false; fi
+ DEBUG [aea8cbf0] Finished in 1.145 seconds with exit status 0 (successful).
+  INFO [abb3885b] Running /usr/bin/env echo "d2d60838f6ffcc2ea7b69609123bc8288fedd0b9" > REVISION as ubuntu@18.117.152.92
+ DEBUG [abb3885b] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230201185017 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env echo "d2d60838f6ffcc2ea7b69609123bc8288fedd0b9" > REVISION )
+  INFO [abb3885b] Finished in 1.209 seconds with exit status 0 (successful).
+  INFO [e582bd0d] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public as ubuntu@18.117.152.92
+ DEBUG [e582bd0d] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public )
+  INFO [e582bd0d] Finished in 1.227 seconds with exit status 0 (successful).
+ DEBUG [0536ae10] Running [ -L /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets ] as ubuntu@18.117.152.92
+ DEBUG [0536ae10] Command: [ -L /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets ]
+ DEBUG [0536ae10] Finished in 1.126 seconds with exit status 1 (failed).
+ DEBUG [d73e3037] Running [ -d /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets ] as ubuntu@18.117.152.92
+ DEBUG [d73e3037] Command: [ -d /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets ]
+ DEBUG [d73e3037] Finished in 1.036 seconds with exit status 1 (failed).
+  INFO [336abe64] Running /usr/bin/env ln -s /home/ubuntu/apps/jwt_authentication/shared/public/assets /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets as ubuntu@18.117.152.92
+ DEBUG [336abe64] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env ln -s /home/ubuntu/apps/jwt_authentication/shared/public/assets /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets )
+  INFO [336abe64] Finished in 1.216 seconds with exit status 0 (successful).
+ DEBUG [4158dc3d] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230201185017; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230201185017'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [4158dc3d] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230201185017; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230201185017'" 1>&2; false; fi
+ DEBUG [4158dc3d] Finished in 1.228 seconds with exit status 0 (successful).
+  INFO [41360a0f] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as ubuntu@18.117.152.92
+ DEBUG [41360a0f] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230201185017 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [41360a0f] Finished in 1.329 seconds with exit status 0 (successful).
+  INFO [c346969f] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/ubuntu/apps/jwt_authentication/shared/bundle as ubuntu@18.117.152.92
+ DEBUG [c346969f] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230201185017 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/ubuntu/apps/jwt_authentication/shared/bundle )
+  INFO [c346969f] Finished in 1.228 seconds with exit status 0 (successful).
+  INFO [fcd30d7f] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as ubuntu@18.117.152.92
+ DEBUG [fcd30d7f] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230201185017 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [fcd30d7f] Finished in 1.330 seconds with exit status 0 (successful).
+ DEBUG [f0ba3260] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230201185017; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230201185017'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [f0ba3260] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230201185017; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230201185017'" 1>&2; false; fi
+ DEBUG [f0ba3260] Finished in 1.023 seconds with exit status 0 (successful).
+ DEBUG [16a0e98b] Running $HOME/.rbenv/bin/rbenv exec bundle check as ubuntu@18.117.152.92
+ DEBUG [16a0e98b] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230201185017 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [16a0e98b] 	[31mhttps://github.com/sinatra/sinatra.git is not yet checked out. Run `bundle
+ DEBUG [16a0e98b] 	
+ DEBUG [16a0e98b] 	install` first.[0m
+ DEBUG [16a0e98b] Finished in 1.331 seconds with exit status 11 (failed).
+  INFO [839f8287] Running $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet as ubuntu@18.117.152.92
+ DEBUG [839f8287] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230201185017 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet )
+  INFO [839f8287] Finished in 33.791 seconds with exit status 0 (successful).
+ DEBUG [6349e217] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230201185017; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230201185017'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [6349e217] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230201185017; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230201185017'" 1>&2; false; fi
+ DEBUG [6349e217] Finished in 1.228 seconds with exit status 0 (successful).
+  INFO [1f66c51d] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as ubuntu@18.117.152.92
+ DEBUG [1f66c51d] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230201185017 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.954788 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/manifest-b84bfa46a33d7f0dc4d2e7b8889486c9a957a5e40713d58f54be71b66954a1ff.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.955215 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/manifest-b84bfa46a33d7f0dc4d2e7b8889486c9a957a5e40713d58f54be71b66954a1ff.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.955521 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/application-e0cf9d8fcb18bf7f909d8d91a5e78499f82ac29523d475bf3a9ab265d5e2b451.css
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.955769 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/application-e0cf9d8fcb18bf7f909d8d91a5e78499f82ac29523d475bf3a9ab265d5e2b451.css.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.956235 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/application-37f365cbecf1fa2810a8303f4b6571676fa1f9c56c248528bc14ddb857531b95.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.956473 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/application-37f365cbecf1fa2810a8303f4b6571676fa1f9c56c248528bc14ddb857531b95.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.957108 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.957263 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.957444 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/controllers/hello_controller-549135e8e7c683a538c3d6d517339ba470fcfb79d62f738a0a089ba41851a554.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.958204 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/controllers/hello_controller-549135e8e7c683a538c3d6d517339ba470fcfb79d62f738a0a089ba41851a554.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.958398 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.958593 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.958779 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/turbo-8794998d8fb36a2ae3fcb23679cd330faef003414be4662cf01cde0756461abd.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.959611 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/turbo-8794998d8fb36a2ae3fcb23679cd330faef003414be4662cf01cde0756461abd.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.959806 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/turbo.min-7ab2ea9f35bae4a4d65b552f9b93524099f267a8ba3a2e07002aaa7bff8ae4cf.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.959960 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/turbo.min-7ab2ea9f35bae4a4d65b552f9b93524099f267a8ba3a2e07002aaa7bff8ae4cf.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.960152 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/turbo.min.js-cdf476cab7616917e39a89c91399dcb01097d08a2d4787b0ee3b52d576cb06ec.map
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.960322 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/turbo.min.js-cdf476cab7616917e39a89c91399dcb01097d08a2d4787b0ee3b52d576cb06ec.map.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.962714 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/actiontext-28c61f5197c204db043317a8f8826a87ab31495b741f854d307ca36122deefce.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.966669 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/actiontext-28c61f5197c204db043317a8f8826a87ab31495b741f854d307ca36122deefce.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.966908 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/trix-1563ff9c10f74e143b3ded40a8458497eaf2f87a648a5cbbfebdb7dec3447a5e.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.967065 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/trix-1563ff9c10f74e143b3ded40a8458497eaf2f87a648a5cbbfebdb7dec3447a5e.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.967243 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/trix-ac629f94e04ee467ab73298a3496a4dfa33ca26a132f624dd5475381bc27bdc8.css
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.967391 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/trix-ac629f94e04ee467ab73298a3496a4dfa33ca26a132f624dd5475381bc27bdc8.css.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.967570 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/es-module-shims-16719834c9bbcdd75f1f99da713bd0c89de488be94d4c5df594511f39cffe7c1.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.967718 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/es-module-shims-16719834c9bbcdd75f1f99da713bd0c89de488be94d4c5df594511f39cffe7c1.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.967951 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/es-module-shims.min-d89e73202ec09dede55fb74115af9c5f9f2bb965433de1c2446e1faa6dac2470.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.970645 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/es-module-shims.min-d89e73202ec09dede55fb74115af9c5f9f2bb965433de1c2446e1faa6dac2470.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.970844 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/es-module-shims.js-32db422c5db541b7129a2ce936aed905edc2cd481748f8d67ffe84e28313158a.map
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.971010 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/es-module-shims.js-32db422c5db541b7129a2ce936aed905edc2cd481748f8d67ffe84e28313158a.map.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.971190 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus-1bd52683afde5c8ff5572f5d49429cea5bf7744ca636fcb830c015d8cccf353e.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.971341 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus-1bd52683afde5c8ff5572f5d49429cea5bf7744ca636fcb830c015d8cccf353e.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.971548 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus-autoloader-c584942b568ba74879da31c7c3d51366737bacaf6fbae659383c0a5653685693.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.971695 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus-autoloader-c584942b568ba74879da31c7c3d51366737bacaf6fbae659383c0a5653685693.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.971873 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus-importmap-autoloader-db2076c783bf2dbee1226e2add52fef290b5d31b5bcd1edd999ac8a6dd31c44a.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.972023 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus-importmap-autoloader-db2076c783bf2dbee1226e2add52fef290b5d31b5bcd1edd999ac8a6dd31c44a.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.972218 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.972391 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.972596 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus.min-d03cf1dff41d6c5698ec2c5d6a501615a7a33754dbeef8d1edd31c928d17c652.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.972742 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus.min-d03cf1dff41d6c5698ec2c5d6a501615a7a33754dbeef8d1edd31c928d17c652.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.972910 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus-autoloader-c584942b568ba74879da31c7c3d51366737bacaf6fbae659383c0a5653685693.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.973104 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus-autoloader-c584942b568ba74879da31c7c3d51366737bacaf6fbae659383c0a5653685693.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.973283 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus-importmap-autoloader-db2076c783bf2dbee1226e2add52fef290b5d31b5bcd1edd999ac8a6dd31c44a.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.973457 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus-importmap-autoloader-db2076c783bf2dbee1226e2add52fef290b5d31b5bcd1edd999ac8a6dd31c44a.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.973631 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.973790 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.973978 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus.min.js-0f3bbd3e2e72e4d7178153a52d180de4086e47082ecfc388ce82a90d8a3d7480.map
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.978640 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/stimulus.min.js-0f3bbd3e2e72e4d7178153a52d180de4086e47082ecfc388ce82a90d8a3d7480.map.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.978833 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/activestorage-3ab61e47dd4ee2d79db525ade1dca2ede0ea2b7371fe587e408ee37b7ade265d.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.982670 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/activestorage-3ab61e47dd4ee2d79db525ade1dca2ede0ea2b7371fe587e408ee37b7ade265d.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.982868 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/activestorage.esm-01f58a45d77495cdfbdfcc872902a430426c4391634ec9c3da5f69fbf8418492.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.983043 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/activestorage.esm-01f58a45d77495cdfbdfcc872902a430426c4391634ec9c3da5f69fbf8418492.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.983226 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/actioncable-5433453f9b6619a9de91aaab2d7fc7ff183e5260c0107cbc9a1aa0c838d9a74e.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.983381 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/actioncable-5433453f9b6619a9de91aaab2d7fc7ff183e5260c0107cbc9a1aa0c838d9a74e.js.gz
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.983553 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/actioncable.esm-e01089c3ec4fe7817fa9abcad06cab6bdc387f95f0ca6aab4bf7ba7537f70690.js
+ DEBUG [1f66c51d] 	
+ DEBUG [1f66c51d] 	I, [2023-02-01T18:51:24.983697 #111194]  INFO -- : Writing /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/actioncable.esm-e01089c3ec4fe7817fa9abcad06cab6bdc387f95f0ca6aab4bf7ba7537f70690.js.gz
+ DEBUG [1f66c51d] 	
+  INFO [1f66c51d] Finished in 5.666 seconds with exit status 0 (successful).
+ DEBUG [ab9a79fc] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230201185017; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230201185017'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [ab9a79fc] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230201185017; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230201185017'" 1>&2; false; fi
+ DEBUG [ab9a79fc] Finished in 1.192 seconds with exit status 0 (successful).
+  INFO [d8444007] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230201185017/assets_manifest_backup as ubuntu@18.117.152.92
+ DEBUG [d8444007] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230201185017 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230201185017/assets_manifest_backup )
+  INFO [d8444007] Finished in 1.227 seconds with exit status 0 (successful).
+ DEBUG [6fe042af] Running /usr/bin/env ls /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/.sprockets-manifest* as ubuntu@18.117.152.92
+ DEBUG [6fe042af] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230201185017 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env ls /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/.sprockets-manifest* )
+ DEBUG [6fe042af] 	/home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/.sprockets-manifest-aa6c832b726de20a4a2a220eb0d352ff.json
+ DEBUG [6fe042af] 	
+ DEBUG [6fe042af] Finished in 1.025 seconds with exit status 0 (successful).
+ DEBUG [ea68659f] Running /usr/bin/env ls /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/.sprockets-manifest* as ubuntu@18.117.152.92
+ DEBUG [ea68659f] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230201185017 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env ls /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/.sprockets-manifest* )
+ DEBUG [ea68659f] 	/home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/.sprockets-manifest-aa6c832b726de20a4a2a220eb0d352ff.json
+ DEBUG [ea68659f] 	
+ DEBUG [ea68659f] Finished in 1.126 seconds with exit status 0 (successful).
+  INFO [8e74ac27] Running /usr/bin/env cp /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/.sprockets-manifest-aa6c832b726de20a4a2a220eb0d352ff.json /home/ubuntu/apps/jwt_authentication/releases/20230201185017/assets_manifest_backup as ubuntu@18.117.152.92
+ DEBUG [8e74ac27] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230201185017 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env cp /home/ubuntu/apps/jwt_authentication/releases/20230201185017/public/assets/.sprockets-manifest-aa6c832b726de20a4a2a220eb0d352ff.json /home/ubuntu/apps/jwt_authentication/releases/20230201185017/assets_manifest_backup )
+  INFO [8e74ac27] Finished in 1.125 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [50af5197] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230201185017; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230201185017'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [50af5197] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230201185017; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230201185017'" 1>&2; false; fi
+ DEBUG [50af5197] Finished in 1.226 seconds with exit status 0 (successful).
+  INFO [c59a4fb2] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate as ubuntu@18.117.152.92
+ DEBUG [c59a4fb2] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230201185017 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+ DEBUG [c59a4fb2] 	rake aborted!
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	Cannot load database configuration:
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	Could not load database configuration. No such file - ["config/database.yml"]
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/railties-7.0.4.2/lib/rails/application/configuration.rb:353:in `database_configuration'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/railtie.rb:266:in `block (2 levels) in <class:Railtie>'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activesupport-7.0.4.2/lib/active_support/lazy_load_hooks.rb:95:in `class_eval'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activesupport-7.0.4.2/lib/active_support/lazy_load_hooks.rb:95:in `block in execute_hook'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activesupport-7.0.4.2/lib/active_support/lazy_load_hooks.rb:85:in `with_execution_control'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activesupport-7.0.4.2/lib/active_support/lazy_load_hooks.rb:90:in `execute_hook'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activesupport-7.0.4.2/lib/active_support/lazy_load_hooks.rb:76:in `block in run_load_hooks'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activesupport-7.0.4.2/lib/active_support/lazy_load_hooks.rb:75:in `each'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activesupport-7.0.4.2/lib/active_support/lazy_load_hooks.rb:75:in `run_load_hooks'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/base.rb:333:in `<module:ActiveRecord>'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/base.rb:15:in `<main>'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/zeitwerk-2.6.6/lib/zei
+ DEBUG [c59a4fb2] 	twerk/kernel.rb:38:in `require'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/railties/databases.rake:22:in `block (2 levels) in <main>'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/rake-13.0.6/exe/rake:27:in `<top (required)>'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/.rbenv/versions/3.2.0/bin/bundle:25:in `load'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/.rbenv/versions/3.2.0/bin/bundle:25:in `<main>'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	Caused by:
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	Could not load database configuration. No such file - ["config/database.yml"]
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/railties-7.0.4.2/lib/rails/application/configuration.rb:353:in `database_configuration'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/railtie.rb:266:in `block (2 levels) in <class:Railtie>'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activesupport-7.0.4.2/lib/active_support/lazy_load_hooks.rb:95:in `class_eval'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activesupport-7.0.4.2/lib/active_support/lazy_load_hooks.rb:95:in `block in execute_hook'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activesupport-7.0.4.2/lib/active_support/lazy_load_hooks.rb:85:in `with_execution_control'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activesupport-7.0.4.2/lib/active_support/lazy_load_hooks.rb:90:in `execute_hook'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activesupport-7.0.4.2/lib/active_support/lazy_load_hooks.rb:76:in `block in run_load_hooks'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activesupport-7.0.4.2/lib/active_support/lazy_load_hooks.rb:75:in `each'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activesupport-7.0.4.2/lib/active_support/lazy_load_hooks.rb:75:in `run_load_hooks'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/base.rb:333:in `<module:ActiveRecord>'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/base.rb:15:in `<main>'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/zeitwerk-2.6.6/lib/zei
+ DEBUG [c59a4fb2] 	twerk/kernel.rb:38:in `require'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/railties/databases.rake:22:in `block (2 levels) in <main>'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/rake-13.0.6/exe/rake:27:in `<top (required)>'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/.rbenv/versions/3.2.0/bin/bundle:25:in `load'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	/home/ubuntu/.rbenv/versions/3.2.0/bin/bundle:25:in `<main>'
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	Tasks: TOP => db:migrate => db:load_config
+ DEBUG [c59a4fb2] 	
+ DEBUG [c59a4fb2] 	(See full trace by running task with --trace)
+ DEBUG [c59a4fb2] 	

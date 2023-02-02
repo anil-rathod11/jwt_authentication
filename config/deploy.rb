@@ -43,6 +43,7 @@ set :branch,        :main
 
 ## Linked Files & Directories (Default None):
 # set :linked_files, %w{config/database.yml}
+set :linked_files, %w{config/application.yml config/database.yml}
 # set :linked_dirs,  %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 namespace :puma do
