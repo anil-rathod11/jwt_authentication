@@ -1773,3 +1773,71 @@ remote: Compressing objects:   0% (1/11370)[K
   INFO ---------------------------------------------------------------------------
   INFO START 2023-02-05 11:21:34 +0530 cap production deploy
   INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-05 11:22:13 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8b2e5399] Running /usr/bin/env mkdir -p /tmp as ubuntu@18.117.152.92
+ DEBUG [8b2e5399] Command: /usr/bin/env mkdir -p /tmp
+  INFO [8b2e5399] Finished in 3.731 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-c7a3e3f88ccee7d6fe50.sh 0.0%
+  INFO Uploading /tmp/git-ssh-c7a3e3f88ccee7d6fe50.sh 100.0%
+  INFO [5b5d93dd] Running /usr/bin/env chmod 700 /tmp/git-ssh-c7a3e3f88ccee7d6fe50.sh as ubuntu@18.117.152.92
+ DEBUG [5b5d93dd] Command: /usr/bin/env chmod 700 /tmp/git-ssh-c7a3e3f88ccee7d6fe50.sh
+  INFO [5b5d93dd] Finished in 0.921 seconds with exit status 0 (successful).
+  INFO [eab59b7a] Running /usr/bin/env git ls-remote git@github.com:anil-rathod11/jwt_authentication.git HEAD as ubuntu@18.117.152.92
+ DEBUG [eab59b7a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-c7a3e3f88ccee7d6fe50.sh" ; /usr/bin/env git ls-remote git@github.com:anil-rathod11/jwt_authentication.git HEAD )
+ DEBUG [eab59b7a] 	ad80a6683be9da6cb79bf5149d15c3d535f02f84
+ DEBUG [eab59b7a] 		
+ DEBUG [eab59b7a] 	HEAD
+  INFO [eab59b7a] Finished in 2.230 seconds with exit status 0 (successful).
+  INFO [fba1be8b] Running /usr/bin/env mkdir -p /var/www/jwt_authentication/shared /var/www/jwt_authentication/releases as ubuntu@18.117.152.92
+ DEBUG [fba1be8b] Command: /usr/bin/env mkdir -p /var/www/jwt_authentication/shared /var/www/jwt_authentication/releases
+ DEBUG [fba1be8b] 	mkdir: 
+ DEBUG [fba1be8b] 	cannot create directory ‘/var/www/jwt_authentication’
+ DEBUG [fba1be8b] 	: Permission denied
+ DEBUG [fba1be8b] 	
+ DEBUG [fba1be8b] 	mkdir: 
+ DEBUG [fba1be8b] 	cannot create directory ‘/var/www/jwt_authentication’
+ DEBUG [fba1be8b] 	: Permission denied
+ DEBUG [fba1be8b] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-05 11:22:45 +0530 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+ DEBUG Uploading /var/www/jwt_authentication/shared/puma.rb 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-05 11:25:54 +0530 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+ DEBUG Uploading /var/www/jwt_authentication/shared/puma.rb 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-05 11:26:09 +0530 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+ DEBUG Uploading /var/www/jwt_authentication/shared/puma.rb 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-05 11:26:37 +0530 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+ DEBUG Uploading /var/www/jwt_authentication/shared/puma.rb 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-05 11:28:10 +0530 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-05 11:30:01 +0530 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG Uploading /var/www/jwt_authentication/shared/puma.rb 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-05 11:41:58 +0530 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG Uploading /var/www/jwt_authentication/shared/puma.rb 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-05 11:48:47 +0530 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+ DEBUG [ef78993e] Running [ -d $HOME/.rbenv/versions/3.2.0 ] as ubuntu@18.117.152.92
+ DEBUG [ef78993e] Command: [ -d $HOME/.rbenv/versions/3.2.0 ]
+ DEBUG [ef78993e] Finished in 3.899 seconds with exit status 0 (successful).
+ DEBUG Uploading /var/www/jwt_authentication/shared/puma.rb 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-05 12:03:04 +0530 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG Uploading /var/www/jwt_authentication/shared/puma.rb 0.0%
