@@ -1,21 +1,24 @@
-# SQLite. Versions 3.8.0 and up are supported.
-#   gem install sqlite3
-#
-#   Ensure the SQLite 3 gem is defined in your Gemfile
-#   gem "sqlite3"
-#
-default: &default
-  adapter: mysql2
-  encoding: utf8
-  username: admin # db master username
-  password: "VBWmMHsoaMNkwAspdSZd" # db master password
-  host: "database-employee.clbkw73xiv5k.us-east-2.rds.amazonaws.com"     # db instance entrypoint
-  port: "3306"
-
 development:
-  <<: *default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: jwt_auth
+  password: Rathod@11
+  socket: /var/run/mysqld/mysqld.sock
   database: jwt_auth_development
+  
+# default: &default
+#   adapter: mysql2
+#   encoding: utf8
+#   username: admin # db master username
+#   password: "VBWmMHsoaMNkwAspdSZd" # db master password
+#   host: "database-employee.clbkw73xiv5k.us-east-2.rds.amazonaws.com"     # db instance entrypoint
+#   port: "3306"
 
-production:
-  <<: *default
-  database: jwt_auth_production
+# development:
+#   <<: *default
+#   database: jwt_auth_development
+
+# production:
+#   <<: *default
+#   database: jwt_auth_production

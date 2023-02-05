@@ -60,7 +60,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
-  
+  gem 'capistrano-yarn'
   gem 'capistrano',         require: false
   gem 'capistrano3-puma',   require: false
   gem 'capistrano-rails',   require: false

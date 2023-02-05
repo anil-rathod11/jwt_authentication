@@ -770,3 +770,995 @@ remote: Compressing objects:   0% (1/11370)[K
  DEBUG [c59a4fb2] 	
  DEBUG [c59a4fb2] 	(See full trace by running task with --trace)
  DEBUG [c59a4fb2] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-02 08:18:26 +0530 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [20969a1c] Running [ -d $HOME/.rbenv/versions/3.2.0 ] as ubuntu@18.117.152.92
+ DEBUG [20969a1c] Command: [ -d $HOME/.rbenv/versions/3.2.0 ]
+ DEBUG [20969a1c] Finished in 4.445 seconds with exit status 0 (successful).
+  INFO [f8bed922] Running mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/sockets -p as ubuntu@18.117.152.92
+ DEBUG [f8bed922] Command: mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/sockets -p
+  INFO [f8bed922] Finished in 1.019 seconds with exit status 0 (successful).
+  INFO [b619309d] Running mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/pids -p as ubuntu@18.117.152.92
+ DEBUG [b619309d] Command: mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/pids -p
+  INFO [b619309d] Finished in 1.024 seconds with exit status 0 (successful).
+  INFO [b25adf23] Running /usr/bin/env mkdir -p /tmp as ubuntu@18.117.152.92
+ DEBUG [b25adf23] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [b25adf23] Finished in 1.016 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ca04ec13cde9d57e5e72.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ca04ec13cde9d57e5e72.sh 100.0%
+  INFO [aee98900] Running /usr/bin/env chmod 700 /tmp/git-ssh-ca04ec13cde9d57e5e72.sh as ubuntu@18.117.152.92
+ DEBUG [aee98900] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-ca04ec13cde9d57e5e72.sh )
+  INFO [aee98900] Finished in 0.919 seconds with exit status 0 (successful).
+  INFO [18506db1] Running /usr/bin/env git ls-remote git@github.com:anil-rathod11/employee_portal.git HEAD as ubuntu@18.117.152.92
+ DEBUG [18506db1] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ca04ec13cde9d57e5e72.sh" ; /usr/bin/env git ls-remote git@github.com:anil-rathod11/employee_portal.git HEAD )
+ DEBUG [18506db1] 	d2d60838f6ffcc2ea7b69609123bc8288fedd0b9
+ DEBUG [18506db1] 		
+ DEBUG [18506db1] 	HEAD
+  INFO [18506db1] Finished in 2.355 seconds with exit status 0 (successful).
+  INFO [36b9c244] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared /home/ubuntu/apps/jwt_authentication/releases as ubuntu@18.117.152.92
+ DEBUG [36b9c244] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared /home/ubuntu/apps/jwt_authentication/releases )
+  INFO [36b9c244] Finished in 0.611 seconds with exit status 0 (successful).
+  INFO [28f924c6] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/public/assets as ubuntu@18.117.152.92
+ DEBUG [28f924c6] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/public/assets )
+  INFO [28f924c6] Finished in 0.920 seconds with exit status 0 (successful).
+  INFO [24e5602a] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/config as ubuntu@18.117.152.92
+ DEBUG [24e5602a] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/config )
+  INFO [24e5602a] Finished in 1.022 seconds with exit status 0 (successful).
+ DEBUG [f75cb8a8] Running [ -f /home/ubuntu/apps/jwt_authentication/shared/config/application.yml ] as ubuntu@18.117.152.92
+ DEBUG [f75cb8a8] Command: [ -f /home/ubuntu/apps/jwt_authentication/shared/config/application.yml ]
+ DEBUG [f75cb8a8] Finished in 1.023 seconds with exit status 1 (failed).
+ ERROR linked file /home/ubuntu/apps/jwt_authentication/shared/config/application.yml does not exist on 18.117.152.92
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-02 08:19:48 +0530 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [49e0d349] Running [ -d $HOME/.rbenv/versions/3.2.0 ] as ubuntu@18.117.152.92
+ DEBUG [49e0d349] Command: [ -d $HOME/.rbenv/versions/3.2.0 ]
+ DEBUG [49e0d349] Finished in 3.759 seconds with exit status 0 (successful).
+  INFO [126fdf8d] Running mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/sockets -p as ubuntu@18.117.152.92
+ DEBUG [126fdf8d] Command: mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/sockets -p
+  INFO [126fdf8d] Finished in 0.917 seconds with exit status 0 (successful).
+  INFO [510deacf] Running mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/pids -p as ubuntu@18.117.152.92
+ DEBUG [510deacf] Command: mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/pids -p
+  INFO [510deacf] Finished in 0.921 seconds with exit status 0 (successful).
+  INFO [c34b2d65] Running /usr/bin/env mkdir -p /tmp as ubuntu@18.117.152.92
+ DEBUG [c34b2d65] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [c34b2d65] Finished in 0.876 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-45edea2a84d0abe44b80.sh 0.0%
+  INFO Uploading /tmp/git-ssh-45edea2a84d0abe44b80.sh 100.0%
+  INFO [1606b2e9] Running /usr/bin/env chmod 700 /tmp/git-ssh-45edea2a84d0abe44b80.sh as ubuntu@18.117.152.92
+ DEBUG [1606b2e9] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-45edea2a84d0abe44b80.sh )
+  INFO [1606b2e9] Finished in 0.922 seconds with exit status 0 (successful).
+  INFO [582481c1] Running /usr/bin/env git ls-remote git@github.com:anil-rathod11/employee_portal.git HEAD as ubuntu@18.117.152.92
+ DEBUG [582481c1] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-45edea2a84d0abe44b80.sh" ; /usr/bin/env git ls-remote git@github.com:anil-rathod11/employee_portal.git HEAD )
+ DEBUG [582481c1] 	d2d60838f6ffcc2ea7b69609123bc8288fedd0b9
+ DEBUG [582481c1] 		
+ DEBUG [582481c1] 	HEAD
+  INFO [582481c1] Finished in 2.252 seconds with exit status 0 (successful).
+  INFO [a30b59f5] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared /home/ubuntu/apps/jwt_authentication/releases as ubuntu@18.117.152.92
+ DEBUG [a30b59f5] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared /home/ubuntu/apps/jwt_authentication/releases )
+  INFO [a30b59f5] Finished in 0.715 seconds with exit status 0 (successful).
+  INFO [8a79439c] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/public/assets as ubuntu@18.117.152.92
+ DEBUG [8a79439c] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/public/assets )
+  INFO [8a79439c] Finished in 0.920 seconds with exit status 0 (successful).
+  INFO [a58eacd0] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/config as ubuntu@18.117.152.92
+ DEBUG [a58eacd0] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/config )
+  INFO [a58eacd0] Finished in 1.024 seconds with exit status 0 (successful).
+ DEBUG [8ad23023] Running [ -f /home/ubuntu/apps/jwt_authentication/shared/config/database.yml ] as ubuntu@18.117.152.92
+ DEBUG [8ad23023] Command: [ -f /home/ubuntu/apps/jwt_authentication/shared/config/database.yml ]
+ DEBUG [8ad23023] Finished in 1.020 seconds with exit status 1 (failed).
+ ERROR linked file /home/ubuntu/apps/jwt_authentication/shared/config/database.yml does not exist on 18.117.152.92
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-02 08:23:36 +0530 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [9054d78f] Running [ -d $HOME/.rbenv/versions/3.2.0 ] as ubuntu@18.117.152.92
+ DEBUG [9054d78f] Command: [ -d $HOME/.rbenv/versions/3.2.0 ]
+ DEBUG [9054d78f] Finished in 3.973 seconds with exit status 0 (successful).
+  INFO [e720d308] Running mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/sockets -p as ubuntu@18.117.152.92
+ DEBUG [e720d308] Command: mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/sockets -p
+  INFO [e720d308] Finished in 1.019 seconds with exit status 0 (successful).
+  INFO [1800fb47] Running mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/pids -p as ubuntu@18.117.152.92
+ DEBUG [1800fb47] Command: mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/pids -p
+  INFO [1800fb47] Finished in 1.024 seconds with exit status 0 (successful).
+  INFO [6a3198c7] Running /usr/bin/env mkdir -p /tmp as ubuntu@18.117.152.92
+ DEBUG [6a3198c7] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [6a3198c7] Finished in 0.988 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-daba2f315dbdc0b220a0.sh 0.0%
+  INFO Uploading /tmp/git-ssh-daba2f315dbdc0b220a0.sh 100.0%
+  INFO [97be420e] Running /usr/bin/env chmod 700 /tmp/git-ssh-daba2f315dbdc0b220a0.sh as ubuntu@18.117.152.92
+ DEBUG [97be420e] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-daba2f315dbdc0b220a0.sh )
+  INFO [97be420e] Finished in 1.024 seconds with exit status 0 (successful).
+  INFO [ef0cca76] Running /usr/bin/env git ls-remote git@github.com:anil-rathod11/employee_portal.git HEAD as ubuntu@18.117.152.92
+ DEBUG [ef0cca76] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-daba2f315dbdc0b220a0.sh" ; /usr/bin/env git ls-remote git@github.com:anil-rathod11/employee_portal.git HEAD )
+ DEBUG [ef0cca76] 	d2d60838f6ffcc2ea7b69609123bc8288fedd0b9
+ DEBUG [ef0cca76] 		HEAD
+  INFO [ef0cca76] Finished in 2.370 seconds with exit status 0 (successful).
+  INFO [e3c1da35] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared /home/ubuntu/apps/jwt_authentication/releases as ubuntu@18.117.152.92
+ DEBUG [e3c1da35] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared /home/ubuntu/apps/jwt_authentication/releases )
+  INFO [e3c1da35] Finished in 0.696 seconds with exit status 0 (successful).
+  INFO [c052f842] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/public/assets as ubuntu@18.117.152.92
+ DEBUG [c052f842] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/public/assets )
+  INFO [c052f842] Finished in 1.022 seconds with exit status 0 (successful).
+  INFO [c4c7b872] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/config as ubuntu@18.117.152.92
+ DEBUG [c4c7b872] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/config )
+  INFO [c4c7b872] Finished in 1.022 seconds with exit status 0 (successful).
+ DEBUG [8d1726ea] Running [ -f /home/ubuntu/apps/jwt_authentication/shared/config/database.yml ] as ubuntu@18.117.152.92
+ DEBUG [8d1726ea] Command: [ -f /home/ubuntu/apps/jwt_authentication/shared/config/database.yml ]
+ DEBUG [8d1726ea] Finished in 1.022 seconds with exit status 0 (successful).
+ DEBUG [3a302435] Running [ -f /home/ubuntu/apps/jwt_authentication/shared/puma.rb ] as ubuntu@18.117.152.92
+ DEBUG [3a302435] Command: [ -f /home/ubuntu/apps/jwt_authentication/shared/puma.rb ]
+ DEBUG [3a302435] Finished in 1.023 seconds with exit status 0 (successful).
+ DEBUG [4340268d] Running [ -f /home/ubuntu/apps/jwt_authentication/current/REVISION ] as ubuntu@18.117.152.92
+ DEBUG [4340268d] Command: [ -f /home/ubuntu/apps/jwt_authentication/current/REVISION ]
+ DEBUG [4340268d] Finished in 1.023 seconds with exit status 1 (failed).
+ DEBUG [bfd6ba5b] Running [ -f /home/ubuntu/apps/jwt_authentication/repo/HEAD ] as ubuntu@18.117.152.92
+ DEBUG [bfd6ba5b] Command: [ -f /home/ubuntu/apps/jwt_authentication/repo/HEAD ]
+ DEBUG [bfd6ba5b] Finished in 1.022 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/jwt_authentication/repo
+ DEBUG [dd717aaa] Running if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [dd717aaa] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi
+ DEBUG [dd717aaa] Finished in 1.022 seconds with exit status 0 (successful).
+  INFO [2472806d] Running /usr/bin/env git remote set-url origin git@github.com:anil-rathod11/employee_portal.git as ubuntu@18.117.152.92
+ DEBUG [2472806d] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-daba2f315dbdc0b220a0.sh" ; /usr/bin/env git remote set-url origin git@github.com:anil-rathod11/employee_portal.git )
+  INFO [2472806d] Finished in 1.023 seconds with exit status 0 (successful).
+  INFO [c85af3f7] Running /usr/bin/env git remote update --prune as ubuntu@18.117.152.92
+ DEBUG [c85af3f7] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-daba2f315dbdc0b220a0.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [c85af3f7] 	Fetching origin
+ DEBUG [c85af3f7] 	
+  INFO [c85af3f7] Finished in 2.457 seconds with exit status 0 (successful).
+ DEBUG [e0b4518d] Running if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [e0b4518d] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi
+ DEBUG [e0b4518d] Finished in 1.022 seconds with exit status 0 (successful).
+  INFO [365c4eaa] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230202025355 as ubuntu@18.117.152.92
+ DEBUG [365c4eaa] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-daba2f315dbdc0b220a0.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230202025355 )
+  INFO [365c4eaa] Finished in 1.024 seconds with exit status 0 (successful).
+  INFO [88be49ff] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/jwt_authentication/releases/20230202025355 as ubuntu@18.117.152.92
+ DEBUG [88be49ff] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-daba2f315dbdc0b220a0.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/jwt_authentication/releases/20230202025355 )
+  INFO [88be49ff] Finished in 2.661 seconds with exit status 0 (successful).
+ DEBUG [86b52b94] Running if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [86b52b94] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi
+ DEBUG [86b52b94] Finished in 1.023 seconds with exit status 0 (successful).
+ DEBUG [9cba5e51] Running /usr/bin/env git rev-list --max-count=1 main as ubuntu@18.117.152.92
+ DEBUG [9cba5e51] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-daba2f315dbdc0b220a0.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [9cba5e51] 	d2d60838f6ffcc2ea7b69609123bc8288fedd0b9
+ DEBUG [9cba5e51] 	
+ DEBUG [9cba5e51] Finished in 1.023 seconds with exit status 0 (successful).
+ DEBUG [880fd14c] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025355; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025355'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [880fd14c] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025355; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025355'" 1>&2; false; fi
+ DEBUG [880fd14c] Finished in 1.023 seconds with exit status 0 (successful).
+  INFO [1cdd7aa7] Running /usr/bin/env echo "d2d60838f6ffcc2ea7b69609123bc8288fedd0b9" > REVISION as ubuntu@18.117.152.92
+ DEBUG [1cdd7aa7] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025355 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env echo "d2d60838f6ffcc2ea7b69609123bc8288fedd0b9" > REVISION )
+  INFO [1cdd7aa7] Finished in 1.022 seconds with exit status 0 (successful).
+  INFO [205d65f6] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230202025355/config as ubuntu@18.117.152.92
+ DEBUG [205d65f6] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230202025355/config )
+  INFO [205d65f6] Finished in 1.022 seconds with exit status 0 (successful).
+ DEBUG [47715b9c] Running [ -L /home/ubuntu/apps/jwt_authentication/releases/20230202025355/config/database.yml ] as ubuntu@18.117.152.92
+ DEBUG [47715b9c] Command: [ -L /home/ubuntu/apps/jwt_authentication/releases/20230202025355/config/database.yml ]
+ DEBUG [47715b9c] Finished in 1.023 seconds with exit status 1 (failed).
+ DEBUG [fe1020db] Running [ -f /home/ubuntu/apps/jwt_authentication/releases/20230202025355/config/database.yml ] as ubuntu@18.117.152.92
+ DEBUG [fe1020db] Command: [ -f /home/ubuntu/apps/jwt_authentication/releases/20230202025355/config/database.yml ]
+ DEBUG [fe1020db] Finished in 1.023 seconds with exit status 1 (failed).
+  INFO [f37cd12c] Running /usr/bin/env ln -s /home/ubuntu/apps/jwt_authentication/shared/config/database.yml /home/ubuntu/apps/jwt_authentication/releases/20230202025355/config/database.yml as ubuntu@18.117.152.92
+ DEBUG [f37cd12c] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env ln -s /home/ubuntu/apps/jwt_authentication/shared/config/database.yml /home/ubuntu/apps/jwt_authentication/releases/20230202025355/config/database.yml )
+  INFO [f37cd12c] Finished in 0.863 seconds with exit status 0 (successful).
+  INFO [8408bbb6] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230202025355/public as ubuntu@18.117.152.92
+ DEBUG [8408bbb6] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230202025355/public )
+  INFO [8408bbb6] Finished in 0.874 seconds with exit status 0 (successful).
+ DEBUG [d7fd4341] Running [ -L /home/ubuntu/apps/jwt_authentication/releases/20230202025355/public/assets ] as ubuntu@18.117.152.92
+ DEBUG [d7fd4341] Command: [ -L /home/ubuntu/apps/jwt_authentication/releases/20230202025355/public/assets ]
+ DEBUG [d7fd4341] Finished in 1.024 seconds with exit status 1 (failed).
+ DEBUG [582d358f] Running [ -d /home/ubuntu/apps/jwt_authentication/releases/20230202025355/public/assets ] as ubuntu@18.117.152.92
+ DEBUG [582d358f] Command: [ -d /home/ubuntu/apps/jwt_authentication/releases/20230202025355/public/assets ]
+ DEBUG [582d358f] Finished in 0.921 seconds with exit status 1 (failed).
+  INFO [b2fa5326] Running /usr/bin/env ln -s /home/ubuntu/apps/jwt_authentication/shared/public/assets /home/ubuntu/apps/jwt_authentication/releases/20230202025355/public/assets as ubuntu@18.117.152.92
+ DEBUG [b2fa5326] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env ln -s /home/ubuntu/apps/jwt_authentication/shared/public/assets /home/ubuntu/apps/jwt_authentication/releases/20230202025355/public/assets )
+  INFO [b2fa5326] Finished in 1.023 seconds with exit status 0 (successful).
+ DEBUG [ad54a4d9] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025355; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025355'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [ad54a4d9] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025355; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025355'" 1>&2; false; fi
+ DEBUG [ad54a4d9] Finished in 1.022 seconds with exit status 0 (successful).
+  INFO [62380c6f] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as ubuntu@18.117.152.92
+ DEBUG [62380c6f] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025355 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [62380c6f] Finished in 1.227 seconds with exit status 0 (successful).
+  INFO [f9f6ff28] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/ubuntu/apps/jwt_authentication/shared/bundle as ubuntu@18.117.152.92
+ DEBUG [f9f6ff28] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025355 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/ubuntu/apps/jwt_authentication/shared/bundle )
+  INFO [f9f6ff28] Finished in 1.229 seconds with exit status 0 (successful).
+  INFO [b24f13bf] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as ubuntu@18.117.152.92
+ DEBUG [b24f13bf] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025355 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [b24f13bf] Finished in 1.227 seconds with exit status 0 (successful).
+ DEBUG [16a1b268] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025355; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025355'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [16a1b268] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025355; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025355'" 1>&2; false; fi
+ DEBUG [16a1b268] Finished in 0.868 seconds with exit status 0 (successful).
+ DEBUG [ceaa8c66] Running $HOME/.rbenv/bin/rbenv exec bundle check as ubuntu@18.117.152.92
+ DEBUG [ceaa8c66] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025355 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [ceaa8c66] 	The Gemfile's dependencies are satisfied
+ DEBUG [ceaa8c66] 	
+ DEBUG [ceaa8c66] Finished in 1.281 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [4048eb23] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025355; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025355'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [4048eb23] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025355; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025355'" 1>&2; false; fi
+ DEBUG [4048eb23] Finished in 1.023 seconds with exit status 0 (successful).
+  INFO [42f07364] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as ubuntu@18.117.152.92
+ DEBUG [42f07364] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025355 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+  INFO [42f07364] Finished in 4.197 seconds with exit status 0 (successful).
+ DEBUG [f1b968f4] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025355; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025355'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [f1b968f4] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025355; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025355'" 1>&2; false; fi
+ DEBUG [f1b968f4] Finished in 1.022 seconds with exit status 0 (successful).
+  INFO [1ababb21] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230202025355/assets_manifest_backup as ubuntu@18.117.152.92
+ DEBUG [1ababb21] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025355 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230202025355/assets_manifest_backup )
+  INFO [1ababb21] Finished in 1.024 seconds with exit status 0 (successful).
+ DEBUG [4a6d36e5] Running /usr/bin/env ls /home/ubuntu/apps/jwt_authentication/releases/20230202025355/public/assets/.sprockets-manifest* as ubuntu@18.117.152.92
+ DEBUG [4a6d36e5] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025355 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env ls /home/ubuntu/apps/jwt_authentication/releases/20230202025355/public/assets/.sprockets-manifest* )
+ DEBUG [4a6d36e5] 	/home/ubuntu/apps/jwt_authentication/releases/20230202025355/public/assets/.sprockets-manifest-aa6c832b726de20a4a2a220eb0d352ff.json
+ DEBUG [4a6d36e5] 	
+ DEBUG [4a6d36e5] Finished in 1.023 seconds with exit status 0 (successful).
+ DEBUG [dbc34046] Running /usr/bin/env ls /home/ubuntu/apps/jwt_authentication/releases/20230202025355/public/assets/.sprockets-manifest* as ubuntu@18.117.152.92
+ DEBUG [dbc34046] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025355 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env ls /home/ubuntu/apps/jwt_authentication/releases/20230202025355/public/assets/.sprockets-manifest* )
+ DEBUG [dbc34046] 	/home/ubuntu/apps/jwt_authentication/releases/20230202025355/public/assets/.sprockets-manifest-aa6c832b726de20a4a2a220eb0d352ff.json
+ DEBUG [dbc34046] 	
+ DEBUG [dbc34046] Finished in 1.023 seconds with exit status 0 (successful).
+  INFO [f863ab03] Running /usr/bin/env cp /home/ubuntu/apps/jwt_authentication/releases/20230202025355/public/assets/.sprockets-manifest-aa6c832b726de20a4a2a220eb0d352ff.json /home/ubuntu/apps/jwt_authentication/releases/20230202025355/assets_manifest_backup as ubuntu@18.117.152.92
+ DEBUG [f863ab03] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025355 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env cp /home/ubuntu/apps/jwt_authentication/releases/20230202025355/public/assets/.sprockets-manifest-aa6c832b726de20a4a2a220eb0d352ff.json /home/ubuntu/apps/jwt_authentication/releases/20230202025355/assets_manifest_backup )
+  INFO [f863ab03] Finished in 1.023 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [a54336b4] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025355; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025355'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [a54336b4] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025355; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025355'" 1>&2; false; fi
+ DEBUG [a54336b4] Finished in 1.019 seconds with exit status 0 (successful).
+  INFO [a0d3a14a] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate as ubuntu@18.117.152.92
+ DEBUG [a0d3a14a] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025355 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+ DEBUG [a0d3a14a] 	rake aborted!
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	ActiveRecord::NoDatabaseError: We could not find your database: jwt_auth_production. Which can be found in the database configuration file located at config/database.yml.
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	To resolve this issue:
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	- Did you create the database for this app, or delete it? You may need to create your database.
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	- Has the database name changed? Check your database.yml config has the correct database name.
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	To create your database, run:
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	        bin/rails db:create
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/mysql2_adapter.rb:47:in `rescue in new_client'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/ac
+ DEBUG [a0d3a14a] 	tive_record/connection_handling.rb:313:in `retrieve_connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_handling.rb:280:in `connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/tasks/database_tasks.rb:262:in `migrate'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/railties/databases.rake:92:in `block (2 levels) in <main>'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/rake-13.0.6/exe/rake:27:in `<top (required)>'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/.rbenv/versions/3.2.0/bin/bundle:25:in `load'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/.rbenv/versions/3.2.0/bin/bundle:25:in `<main>'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	Caused by:
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	Mysql2::Error: Unknown database 'jwt_auth_production'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/mysql2-0.5.5/lib/mysql2/client.rb:97:in `connect'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/mysql2-0.5.5/lib/mysql2/client.rb:97:in `initialize'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/mysql2_adapter.rb:44:in `new'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/mysql2_adapter.rb:44:in `new_client'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.
+ DEBUG [a0d3a14a] 	0/gems/activerecord-7.0.4.2/lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/connection_handling.rb:280:in `connection'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/tasks/database_tasks.rb:262:in `migrate'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/activerecord-7.0.4.2/lib/active_record/railties/databases.rake:92:in `block (2 levels) in <main>'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/rake-13.0.6/exe/rake:27:in `<top (required)>'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/.rbenv/versions/3.2.0/bin/bundle:25:in `load'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	/home/ubuntu/.rbenv/versions/3.2.0/bin/bundle:25:in `<main>'
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	Tasks: TOP => db:migrate
+ DEBUG [a0d3a14a] 	
+ DEBUG [a0d3a14a] 	(See full trace by running task with --trace)
+ DEBUG [a0d3a14a] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-02 08:29:06 +0530 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+ DEBUG [94aa81ff] Running [ -d $HOME/.rbenv/versions/3.2.0 ] as ubuntu@18.117.152.92
+ DEBUG [94aa81ff] Command: [ -d $HOME/.rbenv/versions/3.2.0 ]
+ DEBUG [94aa81ff] Finished in 4.325 seconds with exit status 0 (successful).
+  INFO [411ae1dc] Running mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/sockets -p as ubuntu@18.117.152.92
+ DEBUG [411ae1dc] Command: mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/sockets -p
+  INFO [411ae1dc] Finished in 1.020 seconds with exit status 0 (successful).
+  INFO [626c6ca5] Running mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/pids -p as ubuntu@18.117.152.92
+ DEBUG [626c6ca5] Command: mkdir /home/ubuntu/apps/jwt_authentication/shared/tmp/pids -p
+  INFO [626c6ca5] Finished in 0.921 seconds with exit status 0 (successful).
+  INFO [ace07eb3] Running /usr/bin/env mkdir -p /tmp as ubuntu@18.117.152.92
+ DEBUG [ace07eb3] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /tmp )
+  INFO [ace07eb3] Finished in 1.017 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-14f599e38c30e80c5650.sh 0.0%
+  INFO Uploading /tmp/git-ssh-14f599e38c30e80c5650.sh 100.0%
+  INFO [359f3999] Running /usr/bin/env chmod 700 /tmp/git-ssh-14f599e38c30e80c5650.sh as ubuntu@18.117.152.92
+ DEBUG [359f3999] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env chmod 700 /tmp/git-ssh-14f599e38c30e80c5650.sh )
+  INFO [359f3999] Finished in 1.024 seconds with exit status 0 (successful).
+  INFO [09f74558] Running /usr/bin/env git ls-remote git@github.com:anil-rathod11/employee_portal.git HEAD as ubuntu@18.117.152.92
+ DEBUG [09f74558] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-14f599e38c30e80c5650.sh" ; /usr/bin/env git ls-remote git@github.com:anil-rathod11/employee_portal.git HEAD )
+ DEBUG [09f74558] 	d2d60838f6ffcc2ea7b69609123bc8288fedd0b9
+ DEBUG [09f74558] 		
+ DEBUG [09f74558] 	HEAD
+  INFO [09f74558] Finished in 2.354 seconds with exit status 0 (successful).
+  INFO [d49e2e6b] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared /home/ubuntu/apps/jwt_authentication/releases as ubuntu@18.117.152.92
+ DEBUG [d49e2e6b] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared /home/ubuntu/apps/jwt_authentication/releases )
+  INFO [d49e2e6b] Finished in 0.611 seconds with exit status 0 (successful).
+  INFO [d20dbbf6] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/public/assets as ubuntu@18.117.152.92
+ DEBUG [d20dbbf6] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/public/assets )
+  INFO [d20dbbf6] Finished in 1.023 seconds with exit status 0 (successful).
+  INFO [2353563c] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/config as ubuntu@18.117.152.92
+ DEBUG [2353563c] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/shared/config )
+  INFO [2353563c] Finished in 1.022 seconds with exit status 0 (successful).
+ DEBUG [fc95d7cc] Running [ -f /home/ubuntu/apps/jwt_authentication/shared/config/database.yml ] as ubuntu@18.117.152.92
+ DEBUG [fc95d7cc] Command: [ -f /home/ubuntu/apps/jwt_authentication/shared/config/database.yml ]
+ DEBUG [fc95d7cc] Finished in 1.022 seconds with exit status 0 (successful).
+ DEBUG [0b0c1eb4] Running [ -f /home/ubuntu/apps/jwt_authentication/shared/puma.rb ] as ubuntu@18.117.152.92
+ DEBUG [0b0c1eb4] Command: [ -f /home/ubuntu/apps/jwt_authentication/shared/puma.rb ]
+ DEBUG [0b0c1eb4] Finished in 1.023 seconds with exit status 0 (successful).
+ DEBUG [80dd285e] Running [ -f /home/ubuntu/apps/jwt_authentication/current/REVISION ] as ubuntu@18.117.152.92
+ DEBUG [80dd285e] Command: [ -f /home/ubuntu/apps/jwt_authentication/current/REVISION ]
+ DEBUG [80dd285e] Finished in 1.023 seconds with exit status 1 (failed).
+ DEBUG [615f26e8] Running [ -f /home/ubuntu/apps/jwt_authentication/repo/HEAD ] as ubuntu@18.117.152.92
+ DEBUG [615f26e8] Command: [ -f /home/ubuntu/apps/jwt_authentication/repo/HEAD ]
+ DEBUG [615f26e8] Finished in 1.022 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/apps/jwt_authentication/repo
+ DEBUG [9433f3d3] Running if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [9433f3d3] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi
+ DEBUG [9433f3d3] Finished in 0.920 seconds with exit status 0 (successful).
+  INFO [546559c8] Running /usr/bin/env git remote set-url origin git@github.com:anil-rathod11/employee_portal.git as ubuntu@18.117.152.92
+ DEBUG [546559c8] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-14f599e38c30e80c5650.sh" ; /usr/bin/env git remote set-url origin git@github.com:anil-rathod11/employee_portal.git )
+  INFO [546559c8] Finished in 1.023 seconds with exit status 0 (successful).
+  INFO [8435071b] Running /usr/bin/env git remote update --prune as ubuntu@18.117.152.92
+ DEBUG [8435071b] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-14f599e38c30e80c5650.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [8435071b] 	Fetching origin
+ DEBUG [8435071b] 	
+  INFO [8435071b] Finished in 2.355 seconds with exit status 0 (successful).
+ DEBUG [ae668175] Running if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [ae668175] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi
+ DEBUG [ae668175] Finished in 0.613 seconds with exit status 0 (successful).
+  INFO [55d01d3a] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230202025925 as ubuntu@18.117.152.92
+ DEBUG [55d01d3a] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-14f599e38c30e80c5650.sh" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230202025925 )
+  INFO [55d01d3a] Finished in 0.921 seconds with exit status 0 (successful).
+  INFO [206941e8] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/jwt_authentication/releases/20230202025925 as ubuntu@18.117.152.92
+ DEBUG [206941e8] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-14f599e38c30e80c5650.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /home/ubuntu/apps/jwt_authentication/releases/20230202025925 )
+  INFO [206941e8] Finished in 2.354 seconds with exit status 0 (successful).
+ DEBUG [84e129f6] Running if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [84e129f6] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/repo; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/repo'" 1>&2; false; fi
+ DEBUG [84e129f6] Finished in 1.023 seconds with exit status 0 (successful).
+ DEBUG [342b529d] Running /usr/bin/env git rev-list --max-count=1 main as ubuntu@18.117.152.92
+ DEBUG [342b529d] Command: cd /home/ubuntu/apps/jwt_authentication/repo && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-14f599e38c30e80c5650.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [342b529d] 	d2d60838f6ffcc2ea7b69609123bc8288fedd0b9
+ DEBUG [342b529d] 	
+ DEBUG [342b529d] Finished in 1.025 seconds with exit status 0 (successful).
+ DEBUG [76c347a3] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025925; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025925'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [76c347a3] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025925; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025925'" 1>&2; false; fi
+ DEBUG [76c347a3] Finished in 1.021 seconds with exit status 0 (successful).
+  INFO [5241ceca] Running /usr/bin/env echo "d2d60838f6ffcc2ea7b69609123bc8288fedd0b9" > REVISION as ubuntu@18.117.152.92
+ DEBUG [5241ceca] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025925 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env echo "d2d60838f6ffcc2ea7b69609123bc8288fedd0b9" > REVISION )
+  INFO [5241ceca] Finished in 1.023 seconds with exit status 0 (successful).
+  INFO [529ee2df] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230202025925/config as ubuntu@18.117.152.92
+ DEBUG [529ee2df] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230202025925/config )
+  INFO [529ee2df] Finished in 1.023 seconds with exit status 0 (successful).
+ DEBUG [968575fe] Running [ -L /home/ubuntu/apps/jwt_authentication/releases/20230202025925/config/database.yml ] as ubuntu@18.117.152.92
+ DEBUG [968575fe] Command: [ -L /home/ubuntu/apps/jwt_authentication/releases/20230202025925/config/database.yml ]
+ DEBUG [968575fe] Finished in 1.024 seconds with exit status 1 (failed).
+ DEBUG [868f92ca] Running [ -f /home/ubuntu/apps/jwt_authentication/releases/20230202025925/config/database.yml ] as ubuntu@18.117.152.92
+ DEBUG [868f92ca] Command: [ -f /home/ubuntu/apps/jwt_authentication/releases/20230202025925/config/database.yml ]
+ DEBUG [868f92ca] Finished in 1.025 seconds with exit status 1 (failed).
+  INFO [ede871ed] Running /usr/bin/env ln -s /home/ubuntu/apps/jwt_authentication/shared/config/database.yml /home/ubuntu/apps/jwt_authentication/releases/20230202025925/config/database.yml as ubuntu@18.117.152.92
+ DEBUG [ede871ed] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env ln -s /home/ubuntu/apps/jwt_authentication/shared/config/database.yml /home/ubuntu/apps/jwt_authentication/releases/20230202025925/config/database.yml )
+  INFO [ede871ed] Finished in 0.990 seconds with exit status 0 (successful).
+  INFO [e8b91a2b] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230202025925/public as ubuntu@18.117.152.92
+ DEBUG [e8b91a2b] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230202025925/public )
+  INFO [e8b91a2b] Finished in 0.950 seconds with exit status 0 (successful).
+ DEBUG [f5da8af3] Running [ -L /home/ubuntu/apps/jwt_authentication/releases/20230202025925/public/assets ] as ubuntu@18.117.152.92
+ DEBUG [f5da8af3] Command: [ -L /home/ubuntu/apps/jwt_authentication/releases/20230202025925/public/assets ]
+ DEBUG [f5da8af3] Finished in 1.024 seconds with exit status 1 (failed).
+ DEBUG [e46333cf] Running [ -d /home/ubuntu/apps/jwt_authentication/releases/20230202025925/public/assets ] as ubuntu@18.117.152.92
+ DEBUG [e46333cf] Command: [ -d /home/ubuntu/apps/jwt_authentication/releases/20230202025925/public/assets ]
+ DEBUG [e46333cf] Finished in 0.917 seconds with exit status 1 (failed).
+  INFO [e167a14d] Running /usr/bin/env ln -s /home/ubuntu/apps/jwt_authentication/shared/public/assets /home/ubuntu/apps/jwt_authentication/releases/20230202025925/public/assets as ubuntu@18.117.152.92
+ DEBUG [e167a14d] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env ln -s /home/ubuntu/apps/jwt_authentication/shared/public/assets /home/ubuntu/apps/jwt_authentication/releases/20230202025925/public/assets )
+  INFO [e167a14d] Finished in 1.028 seconds with exit status 0 (successful).
+ DEBUG [2162ae93] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025925; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025925'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [2162ae93] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025925; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025925'" 1>&2; false; fi
+ DEBUG [2162ae93] Finished in 0.920 seconds with exit status 0 (successful).
+  INFO [a2b4d72e] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as ubuntu@18.117.152.92
+ DEBUG [a2b4d72e] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025925 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [a2b4d72e] Finished in 1.227 seconds with exit status 0 (successful).
+  INFO [cdf7b7ad] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/ubuntu/apps/jwt_authentication/shared/bundle as ubuntu@18.117.152.92
+ DEBUG [cdf7b7ad] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025925 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /home/ubuntu/apps/jwt_authentication/shared/bundle )
+  INFO [cdf7b7ad] Finished in 1.228 seconds with exit status 0 (successful).
+  INFO [f7401593] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as ubuntu@18.117.152.92
+ DEBUG [f7401593] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025925 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [f7401593] Finished in 1.230 seconds with exit status 0 (successful).
+ DEBUG [485ad3f2] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025925; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025925'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [485ad3f2] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025925; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025925'" 1>&2; false; fi
+ DEBUG [485ad3f2] Finished in 1.022 seconds with exit status 0 (successful).
+ DEBUG [d04fdc93] Running $HOME/.rbenv/bin/rbenv exec bundle check as ubuntu@18.117.152.92
+ DEBUG [d04fdc93] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025925 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [d04fdc93] 	The Gemfile's dependencies are satisfied
+ DEBUG [d04fdc93] 	
+ DEBUG [d04fdc93] Finished in 1.266 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [940d7d81] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025925; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025925'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [940d7d81] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025925; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025925'" 1>&2; false; fi
+ DEBUG [940d7d81] Finished in 0.986 seconds with exit status 0 (successful).
+  INFO [6b0284e8] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as ubuntu@18.117.152.92
+ DEBUG [6b0284e8] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025925 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+  INFO [6b0284e8] Finished in 4.196 seconds with exit status 0 (successful).
+ DEBUG [db0512b8] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025925; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025925'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [db0512b8] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025925; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025925'" 1>&2; false; fi
+ DEBUG [db0512b8] Finished in 1.022 seconds with exit status 0 (successful).
+  INFO [d820d86c] Running /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230202025925/assets_manifest_backup as ubuntu@18.117.152.92
+ DEBUG [d820d86c] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025925 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mkdir -p /home/ubuntu/apps/jwt_authentication/releases/20230202025925/assets_manifest_backup )
+  INFO [d820d86c] Finished in 1.023 seconds with exit status 0 (successful).
+ DEBUG [1b2b532e] Running /usr/bin/env ls /home/ubuntu/apps/jwt_authentication/releases/20230202025925/public/assets/.sprockets-manifest* as ubuntu@18.117.152.92
+ DEBUG [1b2b532e] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025925 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env ls /home/ubuntu/apps/jwt_authentication/releases/20230202025925/public/assets/.sprockets-manifest* )
+ DEBUG [1b2b532e] 	/home/ubuntu/apps/jwt_authentication/releases/20230202025925/public/assets/.sprockets-manifest-aa6c832b726de20a4a2a220eb0d352ff.json
+ DEBUG [1b2b532e] 	
+ DEBUG [1b2b532e] Finished in 0.921 seconds with exit status 0 (successful).
+ DEBUG [f1221f47] Running /usr/bin/env ls /home/ubuntu/apps/jwt_authentication/releases/20230202025925/public/assets/.sprockets-manifest* as ubuntu@18.117.152.92
+ DEBUG [f1221f47] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025925 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env ls /home/ubuntu/apps/jwt_authentication/releases/20230202025925/public/assets/.sprockets-manifest* )
+ DEBUG [f1221f47] 	/home/ubuntu/apps/jwt_authentication/releases/20230202025925/public/assets/.sprockets-manifest-aa6c832b726de20a4a2a220eb0d352ff.json
+ DEBUG [f1221f47] 	
+ DEBUG [f1221f47] Finished in 1.023 seconds with exit status 0 (successful).
+  INFO [702e95c5] Running /usr/bin/env cp /home/ubuntu/apps/jwt_authentication/releases/20230202025925/public/assets/.sprockets-manifest-aa6c832b726de20a4a2a220eb0d352ff.json /home/ubuntu/apps/jwt_authentication/releases/20230202025925/assets_manifest_backup as ubuntu@18.117.152.92
+ DEBUG [702e95c5] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025925 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env cp /home/ubuntu/apps/jwt_authentication/releases/20230202025925/public/assets/.sprockets-manifest-aa6c832b726de20a4a2a220eb0d352ff.json /home/ubuntu/apps/jwt_authentication/releases/20230202025925/assets_manifest_backup )
+  INFO [702e95c5] Finished in 1.023 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [6382c3b2] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025925; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025925'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [6382c3b2] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases/20230202025925; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases/20230202025925'" 1>&2; false; fi
+ DEBUG [6382c3b2] Finished in 1.019 seconds with exit status 0 (successful).
+  INFO [c83a6331] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate as ubuntu@18.117.152.92
+ DEBUG [c83a6331] Command: cd /home/ubuntu/apps/jwt_authentication/releases/20230202025925 && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+ DEBUG [c83a6331] 	== 20221122085739 CreateEmployees: migrating ==================================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- create_table(:employees)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0288s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221122085739 CreateEmployees: migrated (0.0291s) =========================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221122132112 CreateSessions: migrating ===================================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- create_table(:sessions)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0528s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221122132112 CreateSessions: migrated (0.0531s) ==========================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221123101754 AddColumnToEmployee: migrating ==============================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employees, :reset_password_token, :string)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0274s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employees, :reset_password_sent_at, :datetime)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0229s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221123101754 AddColumnToEmployee: migrated (0.0507s) =====================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221124094914 CreateQuarterlyAppraisals: migrating ========================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- create_table(:quarterly_appraisals)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0311s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221124094914 CreateQuarterlyAppraisals: migrated (0.0313s) ===============
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221124095552 CreateQuarterlyAppraisalRemarks: migrating ==================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- create_table(:quarterly_appraisal_remarks)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0405s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221124095552 CreateQuarterlyAppraisalRemarks: migrated (0.0407s) =========
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221124095858 CreateAnnualSummaries: migrating ============================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- create_table(:annual_summaries)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0275s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221124095858 CreateAnnualSummaries: migrated (0.0277s) ===================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221124100345 CreateAnnualSummaryRemarks: migrating =======================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- create_table(:annual_summary_remarks)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0377s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221124100345 CreateAnnualSummaryRemarks: migrated (0.0380s) ==============
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221124101445 RenameEmployeeIdToReviewerIdInQuarterAppraisalRemark: migrating 
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- rename_column(:quarterly_appraisal_remarks, :employee_id, :reviewer_id)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0498s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- rename_column(:annual_summary_remarks, :employee_id, :reviewer_id)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0425s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221124101445 RenameEmployeeIdToReviewerIdInQuarterAppraisalRemark: migrated (0.0928s) 
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221130113600 CreateHistories: migrating ==================================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- create_table(:histories)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0304s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221130113600 CreateHistories: migrated (0.0306s) =========================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221130123539 ChangeColumnDatatype: migrating =============================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- change_column(:histories, :associated_manager, :integer)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0629s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221130123539 ChangeColumnDatatype: migrated (0.0631s) ====================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221130131019 AddUniqueKeyToQuarterlyAppraisal: migrating =================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_index(:quarterly_appraisals, [:employee_id, :quarter, :year], {:unique=>true})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.2317s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221130131019 AddUniqueKeyToQuarterlyAppraisal: migrated (0.2319s) ========
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221207123110 AddArchiveColumnToHistoryAndQuarterlyAppraisal: migrating ===
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:quarterly_appraisals, :archive, :string)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0270s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:histories, :archive, :string)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0182s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221207123110 AddArchiveColumnToHistoryAndQuarterlyAppraisal: migrated (0.0457s) 
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221208050120 AddAnnualFlagToHistoryTable: migrating ======================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:histories, :annual_flag, :string)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0193s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221208050120 AddAnnualFlagToHistoryTable: migrated (0.0196s) =============
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221208070124 ChangeColumnTypeOfTable: migrating ==========================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- change_column(:histories, :annual_flag, :boolean, {:default=>false})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0894s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- change_column(:histories, :archive, :boolean, {:default=>false})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0595s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- change_column(:quarterly_appraisals, :archive, :boolean, {:default=>false})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0690s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221208070124 ChangeColumnTypeOfTable: migrated (0.2189s) =================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221213042800 AddAssociatedManagerToEmployee: migrating ===================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employees, :associated_manager, :integer, {:null=>true})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0304s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221213042800 AddAssociatedManagerToEmployee: migrated (0.0306s) ==========
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221213113830 AddSubmittedByColumnToHistory: migrating ====================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:histories, :submitted_by, :string)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0159s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221213113830 AddSubmittedByColumnToHistory: migrated (0.0161s) ===========
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221215132053 AddReferencesToEmployee: migrating ==========================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_reference(:employees, :employee, {:null=>true, :foreign_key=>true})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.1348s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221215132053 AddReferencesToEmployee: migrated (0.1351s) =================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221215132203 ChangeColumnNameToEmployee: migrating =======================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- rename_column(:employees, :employee_id, :associated_manager_id)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0667s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221215132203 ChangeColumnNameToEmployee: migrated (0.0670s) ==============
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221216092833 AddStatusColumnToQuarterlyAppraisalRemark: migrating ========
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:quarterly_appraisal_remarks, :status, :string)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0205s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221216092833 AddStatusColumnToQuarterlyAppraisalRemark: migrated (0.0207s) 
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221222114452 CreateEmployeeAddresses: migrating ==========================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- create_table(:employee_addresses)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0309s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221222114452 CreateEmployeeAddresses: migrated (0.0312s) =================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221222123238 CreateEmployeeFinancialInfos: migrating =====================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- create_table(:employee_financial_infos)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0315s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221222123238 CreateEmployeeFinancialInfos: migrated (0.0318s) ============
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221222123947 CreateResignationTables: migrating ==========================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- create_table(:resignation_tables)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0333s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221222123947 CreateResignationTables: migrated (0.0336s) =================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221222124042 AddMultipleFieldsToEmployee: migrating ======================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employees, :date_of_birth, :date)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0412s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employees, :aadhar_no, :string, {:null=>false})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0409s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employees, :passport_no, :string)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0475s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employees, :visa_status, :string)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0421s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employees, :date_of_joining, :date)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0462s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employees, :emer_cont_name, :string, {:null=>false})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0445s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employees, :emer_cont_no, :string, {:null=>false})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0411s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employees, :altr_emer_cont_name, :string)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0423s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employees, :altr_emer_cont_no, :string)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0425s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employees, :blood_group, :string)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0396s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221222124042 AddMultipleFieldsToEmployee: migrated (0.4307s) =============
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221222125906 CreateEmployeeEducationDetails: migrating ===================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- create_table(:employee_education_details)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0367s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20221222125906 CreateEmployeeEducationDetails: migrated (0.0370s) ==========
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230103133350 ChangeDefaultEmployee: migrating ============================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- change_column(:employees, :aadhar_no, :string, {:null=>true})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0689s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- change_column(:employees, :emer_cont_name, :string, {:null=>true})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0671s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- change_column(:employees, :emer_cont_no, :string, {:null=>true})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0747s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- change_column(:employees, :name, :string, {:null=>false})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0645s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- change_column(:employees, :email, :string, {:null=>false})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0747s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230103133350 ChangeDefaultEmployee: migrated (0.3515s) ===================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230105102931 AddColumnToTables: migrating ================================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employees, :salut, :string)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0400s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employee_education_details, :city, :string)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0216s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employee_education_details, :state, :string)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0180s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employee_addresses, :country, :string, {:default=>"India"})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0272s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230105102931 AddColumnToTables: migrated (0.1078s) =======================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230113070730 CreateProjects: migrating ===================================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- create_table(:projects)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0315s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230113070730 CreateProjects: migrated (0.0318s) ==========================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230113091422 CreateCreateEvents: migrating ===============================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- create_table(:create_events)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0501s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230113091422 CreateCreateEvents: migrated (0.0504s) ======================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230114133749 AddReferencesColumnToEmploye: migrating =====================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_reference(:employees, :project, {:foreign_key=>true, :null=>true, :default=>nil})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.1965s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230114133749 AddReferencesColumnToEmploye: migrated (0.1969s) ============
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230114135819 AddDesignationColumnToEmployee: migrating ===================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_column(:employees, :designation, :string)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0470s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230114135819 AddDesignationColumnToEmployee: migrated (0.0473s) ==========
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230116094938 CreateLeaveCounters: migrating ==============================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- create_table(:leave_counters)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0314s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230116094938 CreateLeaveCounters: migrated (0.0316s) =====================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230116100837 CreateEmpleaves: migrating ==================================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- create_table(:empleaves)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0335s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230116100837 CreateEmpleaves: migrated (0.0338s) =========================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230117083713 AddIndexToLeaveAndCounter: migrating ========================
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_index(:empleaves, [:employee_id, :start_date], {:unique=>true})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0226s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- add_index(:leave_counters, [:employee_id, :year], {:unique=>true})
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0187s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230117083713 AddIndexToLeaveAndCounter: migrated (0.0418s) ===============
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230124100454 RemoveAssociatedManagerFromEmployee: migrating ==============
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	-- remove_column(:employees, :associated_manager)
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	   -> 0.0890s
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	== 20230124100454 RemoveAssociatedManagerFromEmployee: migrated (0.0894s) =====
+ DEBUG [c83a6331] 	
+ DEBUG [c83a6331] 	
+  INFO [c83a6331] Finished in 5.653 seconds with exit status 0 (successful).
+  INFO [4b931b40] Running /usr/bin/env ln -s /home/ubuntu/apps/jwt_authentication/releases/20230202025925 /home/ubuntu/apps/jwt_authentication/releases/current as ubuntu@18.117.152.92
+ DEBUG [4b931b40] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env ln -s /home/ubuntu/apps/jwt_authentication/releases/20230202025925 /home/ubuntu/apps/jwt_authentication/releases/current )
+  INFO [4b931b40] Finished in 0.969 seconds with exit status 0 (successful).
+  INFO [a281323b] Running /usr/bin/env mv /home/ubuntu/apps/jwt_authentication/releases/current /home/ubuntu/apps/jwt_authentication as ubuntu@18.117.152.92
+ DEBUG [a281323b] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env mv /home/ubuntu/apps/jwt_authentication/releases/current /home/ubuntu/apps/jwt_authentication )
+  INFO [a281323b] Finished in 0.927 seconds with exit status 0 (successful).
+ DEBUG [d87be0f3] Running /usr/bin/env ls -x /home/ubuntu/apps/jwt_authentication/releases as ubuntu@18.117.152.92
+ DEBUG [d87be0f3] Command: ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env ls -x /home/ubuntu/apps/jwt_authentication/releases )
+ DEBUG [d87be0f3] 	20230201184526
+ DEBUG [d87be0f3] 		
+ DEBUG [d87be0f3] 	20230201185017
+ DEBUG [d87be0f3] 		
+ DEBUG [d87be0f3] 	20230202025355
+ DEBUG [d87be0f3] 		
+ DEBUG [d87be0f3] 	20230202025925
+ DEBUG [d87be0f3] 	
+ DEBUG [d87be0f3] Finished in 0.945 seconds with exit status 0 (successful).
+ DEBUG [44f1a380] Running if test ! -d /home/ubuntu/apps/jwt_authentication/releases; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [44f1a380] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/releases; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/releases'" 1>&2; false; fi
+ DEBUG [44f1a380] Finished in 0.919 seconds with exit status 0 (successful).
+  INFO [9cb68f3f] Running /usr/bin/env echo "Branch main (at d2d60838f6ffcc2ea7b69609123bc8288fedd0b9) deployed as release 20230202025925 by anveshak" >> /home/ubuntu/apps/jwt_authentication/revisions.log as ubuntu@18.117.152.92
+ DEBUG [9cb68f3f] Command: cd /home/ubuntu/apps/jwt_authentication/releases && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" ; /usr/bin/env echo "Branch main (at d2d60838f6ffcc2ea7b69609123bc8288fedd0b9) deployed as release 20230202025925 by anveshak" >> /home/ubuntu/apps/jwt_authentication/revisions.log )
+  INFO [9cb68f3f] Finished in 1.022 seconds with exit status 0 (successful).
+ DEBUG [f2e1b543] Running if test ! -d /home/ubuntu/apps/jwt_authentication/current; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/current'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [f2e1b543] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/current; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/current'" 1>&2; false; fi
+ DEBUG [f2e1b543] Finished in 1.023 seconds with exit status 0 (successful).
+ DEBUG [9ba6cc35] Running [ -f /home/ubuntu/apps/jwt_authentication/shared/tmp/pids/puma.pid ] as ubuntu@18.117.152.92
+ DEBUG [9ba6cc35] Command: [ -f /home/ubuntu/apps/jwt_authentication/shared/tmp/pids/puma.pid ]
+ DEBUG [9ba6cc35] Finished in 1.023 seconds with exit status 1 (failed).
+ DEBUG [d9336fd5] Running [ -f /home/ubuntu/apps/jwt_authentication/shared/tmp/pids/puma.pid ] as ubuntu@18.117.152.92
+ DEBUG [d9336fd5] Command: [ -f /home/ubuntu/apps/jwt_authentication/shared/tmp/pids/puma.pid ]
+ DEBUG [d9336fd5] Finished in 1.022 seconds with exit status 1 (failed).
+ DEBUG [e0c09e02] Running if test ! -d /home/ubuntu/apps/jwt_authentication/current; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/current'" 1>&2; false; fi as ubuntu@18.117.152.92
+ DEBUG [e0c09e02] Command: if test ! -d /home/ubuntu/apps/jwt_authentication/current; then echo "Directory does not exist '/home/ubuntu/apps/jwt_authentication/current'" 1>&2; false; fi
+ DEBUG [e0c09e02] Finished in 0.990 seconds with exit status 0 (successful).
+  INFO [f408d2be] Running $HOME/.rbenv/bin/rbenv exec bundle exec puma -C /home/ubuntu/apps/jwt_authentication/shared/puma.rb --daemon as ubuntu@18.117.152.92
+ DEBUG [f408d2be] Command: cd /home/ubuntu/apps/jwt_authentication/current && ( export PATH="~/.rbenv/shims:~/.rbenv/bin:$PATH" RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="3.2.0" RACK_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec puma -C /home/ubuntu/apps/jwt_authentication/shared/puma.rb --daemon )
+ DEBUG [f408d2be] 	[31mbundler: failed to load command: puma (/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/bin/puma)[0m
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 	/home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/puma-5.6.5/lib/puma/cli.rb:51:in `initialize': [1minvalid option: --daemon ([1;4mOptionParser::InvalidOption[m[1m)[m
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/puma-5.6.5/bin/puma:8:in `new'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/gems/puma-5.6.5/bin/puma:8:in `<top (required)>'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/bin/puma:25:in `load'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/apps/jwt_authentication/shared/bundle/ruby/3.2.0/bin/puma:25:in `<top (required)>'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/bundler-2.4.5/lib/bundler/cli/exec.rb:58:in `load'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/bundler-2.4.5/lib/bundler/cli/exec.rb:58:in `kernel_load'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/bundler-2.4.5/lib/bundler/cli/exec.rb:23:in `run'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/bundler-2.4.5/lib/bundler/cli.rb:491:in `exec'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/bundler-2.4.5/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/bundler-2.4.5/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/bundler-2.4.5/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/bundler-2.4.5/lib/bundler/cli.rb:34:in `dispatch'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/bundler-2.4.5/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/bundler-2.4.5/lib/bundler/cli.rb:28:in `start'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/bundler-2.4.5/exe/bundle:45:in `block in <top (required)>'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems
+ DEBUG [f408d2be] 	/bundler-2.4.5/lib/bundler/friendly_errors.rb:117:in `with_friendly_errors'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/bundler-2.4.5/exe/bundle:33:in `<top (required)>'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/.rbenv/versions/3.2.0/bin/bundle:25:in `load'
+ DEBUG [f408d2be] 	
+ DEBUG [f408d2be] 		
+ DEBUG [f408d2be] 	from /home/ubuntu/.rbenv/versions/3.2.0/bin/bundle:25:in `<main>'
+ DEBUG [f408d2be] 	
