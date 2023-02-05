@@ -1762,3 +1762,11 @@ remote: Compressing objects:   0% (1/11370)[K
  DEBUG [f408d2be] 		
  DEBUG [f408d2be] 	from /home/ubuntu/.rbenv/versions/3.2.0/bin/bundle:25:in `<main>'
  DEBUG [f408d2be] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-05 11:18:38 +0530 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+ DEBUG Uploading /var/www/jwt_authentication/shared/puma.rb 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-05 11:20:24 +0530 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+ DEBUG Uploading /var/www/jwt_authentication/shared/puma.rb 0.0%

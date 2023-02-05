@@ -2,8 +2,9 @@
 require "capistrano/setup"
 require "capistrano/deploy"
 require "capistrano/rails"
-require "capistrano/puma"
-install_plugin Capistrano::Puma
+require 'capistrano/puma'
+install_plugin Capistrano::Puma  # Default puma tasks
+install_plugin Capistrano::Puma::Systemd
 require "capistrano/yarn"
 require "capistrano/bundler"
 require "capistrano/scm/git"
