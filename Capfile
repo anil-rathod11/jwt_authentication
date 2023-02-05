@@ -5,7 +5,7 @@ require "capistrano/rails"
 require 'capistrano/puma'
 require 'capistrano/rbenv'
 require "capistrano/rails/assets"
-# require "capistrano/rails/migrations"
+require "capistrano/rails/migrations"
 install_plugin Capistrano::Puma  # Default puma tasks
 install_plugin Capistrano::Puma::Systemd
 require "capistrano/yarn"
