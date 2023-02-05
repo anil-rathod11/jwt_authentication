@@ -7,7 +7,7 @@ set :rails_env, :development
 set :puma_threads, [4, 16]
 # Don’t change these unless you know what you’re doing
 set :pty, true
-set :use_sudo, false
+set :use_sudo, true
 set :stage, :production
 set :deploy_via, :remote_cache
 set :puma_bind, "unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock"
@@ -18,7 +18,7 @@ set :puma_error_log, "#{release_path}/log/puma.access.log"
 set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, false 
-
+# set :ssh_options, { forward_agent: true, user: fetch(:user), keys: %w(~/.ssh/id_rsa) }
 set :deploy_to, "/var/www/jwt_authentication"
 namespace :puma do
   desc 'Create Directories for Puma Pids and Socket'
