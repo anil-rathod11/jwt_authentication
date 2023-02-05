@@ -4,11 +4,11 @@ set :repo_url, 'git@github.com:anil-rathod11/jwt_authentication.git'
 set :deploy_to, '/home/ubuntu/jwt_authentication'
 set :use_sudo, true
 set :branch, 'main'
-set :linked_files, %w{config/master.key config/database.yml}
+# set :linked_files, %w{config/master.key config/database.yml}
 set :rails_env, 'production'
 set :keep_releases, 2
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
-set :linked_files, %w{config/database.yml config/master.key}
+# set :linked_files, %w{config/database.yml config/master.key}
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 set :puma_bind,       "unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock"
