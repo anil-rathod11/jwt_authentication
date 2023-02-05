@@ -4,6 +4,8 @@ set :repo_url, 'git@github.com:anil-rathod11/jwt_authentication.git'
 set :deploy_to, '/home/ubuntu/jwt_authentication'
 set :use_sudo, true
 set :branch, 'main'
+set :rbenv_type, :user
+set :rbenv_ruby, "3.2.0"
 # set :linked_files, %w{config/master.key config/database.yml}
 set :rails_env, 'production'
 set :keep_releases, 2
